@@ -49,9 +49,8 @@ const Footer: React.FC = () => {
                 </svg>
               </div>
               <div className="flex items-center gap-1">
-                <span className="text-2xl font-extrabold tracking-tight text-white">call</span>
-                <span className="text-2xl font-extrabold tracking-tight text-shimmer">bot</span>
-                <span className="ml-1 px-1.5 py-0.5 text-[10px] font-bold bg-gradient-to-r from-[#0066FF] to-[#8B5CF6] rounded text-white uppercase tracking-wider">AI</span>
+                <span className="text-xl font-extrabold tracking-tight text-white">No Missed</span>
+                <span className="text-xl font-extrabold tracking-tight text-shimmer">Calls</span>
               </div>
             </Link>
             <p className="text-[#A1A1AA] mb-6 max-w-sm">
@@ -134,7 +133,7 @@ const Footer: React.FC = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-[#A1A1AA] text-sm">
-            Callbot © 2025 | AI10P Ltd (UK Company 16542108)
+            No Missed Calls © 2025 | AI10P Ltd (UK Company 16542108)
           </div>
           <div className="flex items-center gap-2 text-sm text-[#A1A1AA]">
             <span className="flex items-center gap-1">

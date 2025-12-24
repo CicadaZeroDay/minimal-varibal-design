@@ -61,9 +61,8 @@ const Navbar: React.FC = () => {
               </svg>
             </div>
             <div className="flex items-center gap-1">
-              <span className="text-2xl font-extrabold tracking-tight text-white">call</span>
-              <span className="text-2xl font-extrabold tracking-tight text-shimmer">bot</span>
-              <span className="ml-1 px-1.5 py-0.5 text-[10px] font-bold bg-gradient-to-r from-[#0066FF] to-[#8B5CF6] rounded text-white uppercase tracking-wider">AI</span>
+              <span className="text-xl font-extrabold tracking-tight text-white">No Missed</span>
+              <span className="text-xl font-extrabold tracking-tight text-shimmer">Calls</span>
             </div>
           </Link>
 
