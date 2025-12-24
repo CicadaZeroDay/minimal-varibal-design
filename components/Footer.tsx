@@ -101,7 +101,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-3 text-[#A1A1AA]">
               <li className="flex items-center gap-2">
                 <i className="fa-solid fa-envelope text-[#0066FF]"></i>
-                hello@callbot.uk
+                hello@nomissedcalls.uk
               </li>
               <li className="flex items-center gap-2">
                 <i className="fa-solid fa-phone text-[#0066FF]"></i>

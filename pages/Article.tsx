@@ -168,13 +168,13 @@ const Article: React.FC = () => {
               "name": "Callbot.uk",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://callbot.uk/logo.png"
+                "url": "https://nomissedcalls.uk/logo.png"
               }
             },
             "datePublished": article.publishedAt,
             "mainEntityOfPage": {
               "@type": "WebPage",
-              "@id": `https://callbot.uk/blog/${article.slug}`
+              "@id": `https://nomissedcalls.uk/blog/${article.slug}`
             }
           })
         }}
