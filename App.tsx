@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
 import Article from './pages/Article';
@@ -14,6 +15,7 @@ const App: React.FC = () => {
         <Route path="/blog/:slug" element={<Article />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Analytics />
     </BrowserRouter>
   );
 };
