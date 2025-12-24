@@ -8,10 +8,10 @@ const Blog: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
   useEffect(() => {
-    document.title = 'Blog | Callbot.uk - AI Receptionist Insights';
+    document.title = 'Blog | No Missed Calls - AI Receptionist Insights';
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Expert insights on AI receptionists, missed calls recovery, and growing your UK business. Tips from Callbot.uk.');
+      metaDescription.setAttribute('content', 'Expert insights on AI receptionists, missed calls recovery, and growing your UK business.');
     }
   }, []);
 
@@ -39,7 +39,7 @@ const Blog: React.FC = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
-                Callbot.uk <span className="gradient-text">Blog</span>
+                No Missed Calls <span className="gradient-text">Blog</span>
               </h1>
               <p className="text-xl text-[#A1A1AA] max-w-2xl mx-auto leading-relaxed">
                 Expert insights on AI receptionists, recovering missed calls, and growing your UK business.

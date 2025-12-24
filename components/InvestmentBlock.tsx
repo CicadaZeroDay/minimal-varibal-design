@@ -87,7 +87,7 @@ const InvestmentBlock: React.FC = () => {
           You're Already Paying. <span className="gradient-text">Just Not Us.</span>
         </h2>
         <p className="text-xl text-[#A1A1AA] max-w-2xl mx-auto">
-          Every missed call is an invisible invoice. Callbot cancels it.
+          Every missed call is an invisible invoice. We cancel it.
         </p>
       </div>
 
@@ -176,7 +176,7 @@ const InvestmentBlock: React.FC = () => {
               Cancel this invisible invoice for just <span className="text-[#0066FF]">£399/month</span>.
             </p>
             <p className="text-[#A1A1AA]">
-              For every £1 you invest in Callbot, you recover £6+ in bookings you're currently losing.
+              For every £1 you invest, you recover £6+ in bookings you're currently losing.
             </p>
           </div>
         </div>

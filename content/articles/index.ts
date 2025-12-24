@@ -42,20 +42,20 @@ export const articles: Article[] = [
       <p>Result: Her older clients (her best spenders) refused to use it. <em>"They want to talk to someone. They have questions. They're not going to figure out an app."</em></p>
 
       <h2>The Turning Point: AI That Sounds Human</h2>
-      <p>In September 2024, Sarah discovered Callbot.uk through a fellow salon owner. Skeptical but desperate, she signed up for a demo.</p>
+      <p>In September 2024, Sarah discovered No Missed Calls through a fellow salon owner. Skeptical but desperate, she signed up for a demo.</p>
 
       <p><strong>"I called my own salon pretending to be a customer. The AI answered on the first ring. It knew my services, my prices, my availability. It booked the appointment and I got a text confirmation. I was genuinely shocked."</strong></p>
 
       <h2>The Results: 30 Days Later</h2>
 
       <div style="background: linear-gradient(135deg, rgba(0,102,255,0.1), rgba(139,92,246,0.1)); padding: 24px; border-radius: 12px; margin: 24px 0;">
-        <p style="font-size: 24px; font-weight: bold; margin: 0; color: #0066FF;">Before Callbot:</p>
+        <p style="font-size: 24px; font-weight: bold; margin: 0; color: #0066FF;">Before:</p>
         <ul style="margin: 16px 0;">
           <li>68 bookings/month</li>
           <li>12-15 missed calls/day</li>
           <li>£8,160 monthly revenue</li>
         </ul>
-        <p style="font-size: 24px; font-weight: bold; margin: 24px 0 0 0; color: #10B981;">After Callbot:</p>
+        <p style="font-size: 24px; font-weight: bold; margin: 24px 0 0 0; color: #10B981;">After:</p>
         <ul style="margin: 16px 0 0 0;">
           <li>103 bookings/month (+51%)</li>
           <li>0 missed calls</li>
@@ -72,7 +72,7 @@ export const articles: Article[] = [
       </ul>
 
       <h2>The ROI Breakdown</h2>
-      <p>Sarah pays £399/month for Callbot. Her additional revenue: £4,200/month.</p>
+      <p>Sarah pays £399/month for No Missed Calls. Her additional revenue: £4,200/month.</p>
       <p><strong>That's a 10.5x return on investment.</strong></p>
 
       <p><em>"I was spending £1,400 on a part-time receptionist who still missed calls. Now I spend £399 on an AI that never misses a single one. The maths was obvious."</em></p>
@@ -82,7 +82,7 @@ export const articles: Article[] = [
 
       <p><strong>Get a free demo call from Sophie, our AI receptionist.</strong> See exactly how she handles bookings, answers questions, and sounds completely natural. Takes 30 seconds.</p>
     `,
-    author: 'Callbot Team',
+    author: 'NMC Team',
     publishedAt: '22 December 2024',
     category: 'Case Studies',
     tags: ['beauty salon', 'case study', 'missed calls', 'London', 'ROI'],
@@ -121,7 +121,7 @@ export const articles: Article[] = [
       <p>Result: Patients in pain don't wait until Monday. They Google "emergency dentist near me" and book elsewhere. Those patients often don't come back.</p>
 
       <h2>The Solution That Actually Worked</h2>
-      <p>In October 2024, James implemented Callbot.uk with a custom script for dental emergencies. The AI was trained to:</p>
+      <p>In October 2024, James implemented No Missed Calls with a custom script for dental emergencies. The AI was trained to:</p>
       <ul>
         <li>Identify genuine emergencies (severe pain, swelling, knocked-out tooth)</li>
         <li>Book same-day or next-day emergency slots</li>
@@ -134,14 +134,14 @@ export const articles: Article[] = [
       <h2>The 90-Day Results</h2>
 
       <div style="background: linear-gradient(135deg, rgba(0,102,255,0.1), rgba(139,92,246,0.1)); padding: 24px; border-radius: 12px; margin: 24px 0;">
-        <p style="font-size: 24px; font-weight: bold; margin: 0; color: #0066FF;">Before Callbot:</p>
+        <p style="font-size: 24px; font-weight: bold; margin: 0; color: #0066FF;">Before:</p>
         <ul style="margin: 16px 0;">
           <li>Monthly revenue: £52,000</li>
           <li>Emergency appointments: 12/month</li>
           <li>After-hours bookings: 0</li>
           <li>New patient enquiries answered: ~60%</li>
         </ul>
-        <p style="font-size: 24px; font-weight: bold; margin: 24px 0 0 0; color: #10B981;">After Callbot:</p>
+        <p style="font-size: 24px; font-weight: bold; margin: 24px 0 0 0; color: #10B981;">After:</p>
         <ul style="margin: 16px 0 0 0;">
           <li>Monthly revenue: £70,000 (+34%)</li>
           <li>Emergency appointments: 31/month (+158%)</li>
@@ -158,10 +158,10 @@ export const articles: Article[] = [
       </ul>
 
       <h2>The Unexpected Benefit: Staff Morale</h2>
-      <p>Dr. Hartley's receptionist, Linda, was drowning in calls before. <strong>"She was answering 60+ calls a day, getting stressed, making booking errors. Now Callbot handles the overflow and after-hours. Linda focuses on patients in the practice. She's happier, we have fewer scheduling mistakes, and patients in the waiting room get actual attention."</strong></p>
+      <p>Dr. Hartley's receptionist, Linda, was drowning in calls before. <strong>"She was answering 60+ calls a day, getting stressed, making booking errors. Now No Missed Calls handles the overflow and after-hours. Linda focuses on patients in the practice. She's happier, we have fewer scheduling mistakes, and patients in the waiting room get actual attention."</strong></p>
 
       <h2>The Investment vs. Return</h2>
-      <p>Callbot cost for Oakwood Dental: £399/month + one-time £450 setup.</p>
+      <p>No Missed Calls cost for Oakwood Dental: £399/month + one-time £450 setup.</p>
       <p>Additional monthly revenue: £18,000.</p>
       <p><strong>ROI: 45x in the first month alone.</strong></p>
 
@@ -170,7 +170,7 @@ export const articles: Article[] = [
 
       <p><strong>Request a demo call and hear exactly how our AI handles dental enquiries.</strong> It takes 30 seconds, and you'll understand why practices across the UK are switching.</p>
     `,
-    author: 'Callbot Team',
+    author: 'NMC Team',
     publishedAt: '20 December 2024',
     category: 'Case Studies',
     tags: ['dental practice', 'case study', 'emergency calls', 'Manchester', 'healthcare'],
@@ -211,8 +211,8 @@ export const articles: Article[] = [
       <p><strong>Attempt #3: Letting it go to voicemail with callback promise</strong></p>
       <p>Brutal truth: 80% of callers don't leave voicemails. They just call the next garage in the Google results. <em>"I'd call back numbers from missed calls and hear 'oh, I already booked somewhere else.' Every single time."</em></p>
 
-      <h2>How Callbot Changed Everything</h2>
-      <p>A customer told Mike about Callbot in November 2024. <strong>"He said, 'Mate, I just called your shop and an AI booked me in. That's brilliant.' I had no idea what he was talking about — my wife had set it up as a surprise."</strong></p>
+      <h2>How No Missed Calls Changed Everything</h2>
+      <p>A customer told Mike about No Missed Calls in November 2024. <strong>"He said, 'Mate, I just called your shop and an AI booked me in. That's brilliant.' I had no idea what he was talking about — my wife had set it up as a surprise."</strong></p>
 
       <p>The AI was trained on Mike's specific services:</p>
       <ul>
@@ -228,14 +228,14 @@ export const articles: Article[] = [
       <h2>The Numbers After 60 Days</h2>
 
       <div style="background: linear-gradient(135deg, rgba(0,102,255,0.1), rgba(139,92,246,0.1)); padding: 24px; border-radius: 12px; margin: 24px 0;">
-        <p style="font-size: 24px; font-weight: bold; margin: 0; color: #0066FF;">Before Callbot:</p>
+        <p style="font-size: 24px; font-weight: bold; margin: 0; color: #0066FF;">Before:</p>
         <ul style="margin: 16px 0;">
           <li>Calls answered: 47%</li>
           <li>New customers/week: 8</li>
           <li>Weekly revenue: £11,200</li>
           <li>Lost calls going to competitors: 20+/day</li>
         </ul>
-        <p style="font-size: 24px; font-weight: bold; margin: 24px 0 0 0; color: #10B981;">After Callbot:</p>
+        <p style="font-size: 24px; font-weight: bold; margin: 24px 0 0 0; color: #10B981;">After:</p>
         <ul style="margin: 16px 0 0 0;">
           <li>Calls answered: 100%</li>
           <li>New customers/week: 14 (+75%)</li>
@@ -259,7 +259,7 @@ export const articles: Article[] = [
       </ul>
 
       <h2>The Simple Maths</h2>
-      <p>Callbot cost: £399/month</p>
+      <p>No Missed Calls cost: £399/month</p>
       <p>Additional revenue: £12,320/month</p>
       <p><strong>Return on investment: 31x</strong></p>
 
@@ -270,7 +270,7 @@ export const articles: Article[] = [
 
       <p><strong>Get a free demo call from our AI.</strong> Pretend you're a customer with a car problem. You'll hear exactly how it sounds, how it books, and why garages across Britain are switching. 30 seconds is all it takes.</p>
     `,
-    author: 'Callbot Team',
+    author: 'NMC Team',
     publishedAt: '18 December 2024',
     category: 'Case Studies',
     tags: ['auto repair', 'garage', 'case study', 'Birmingham', 'mechanics', 'missed calls'],
@@ -312,7 +312,7 @@ export const articles: Article[] = [
       </ul>
 
       <h2>The Solution: AI Receptionists</h2>
-      <p>Modern AI receptionists like Callbot.uk can answer every call, 24/7, with a natural British voice. They can:</p>
+      <p>Modern AI receptionists like No Missed Calls can answer every call, 24/7, with a natural British voice. They can:</p>
       <ul>
         <li>Book appointments directly into your calendar</li>
         <li>Answer FAQs about your business</li>
@@ -322,7 +322,7 @@ export const articles: Article[] = [
 
       <p>The cost? Less than £15 per day - a fraction of what you're losing to missed calls.</p>
     `,
-    author: 'Callbot Team',
+    author: 'NMC Team',
     publishedAt: '15 January 2025',
     category: 'Business Tips',
     tags: ['missed calls', 'ROI', 'UK business', 'revenue'],
@@ -379,7 +379,7 @@ export const articles: Article[] = [
 
       <p>The only scenario where a human might be better is if you need complex problem-solving or face-to-face reception duties. For phone-only reception, AI wins on every metric.</p>
     `,
-    author: 'Callbot Team',
+    author: 'NMC Team',
     publishedAt: '10 January 2025',
     category: 'Comparisons',
     tags: ['AI receptionist', 'hiring', 'costs', 'comparison'],
@@ -437,7 +437,7 @@ export const articles: Article[] = [
       <h2>Is Your Industry Missing?</h2>
       <p>Even if your industry isn't listed, if you take bookings by phone and miss calls, an AI receptionist can help. Get a free demo to see how it works for your business.</p>
     `,
-    author: 'Callbot Team',
+    author: 'NMC Team',
     publishedAt: '5 January 2025',
     category: 'Industry Guides',
     tags: ['industries', 'ROI', 'use cases', 'small business'],

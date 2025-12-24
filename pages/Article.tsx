@@ -10,7 +10,7 @@ const Article: React.FC = () => {
 
   useEffect(() => {
     if (article) {
-      document.title = `${article.title} | Callbot.uk Blog`;
+      document.title = `${article.title} | No Missed Calls Blog`;
       const metaDescription = document.querySelector('meta[name="description"]');
       if (metaDescription) {
         metaDescription.setAttribute('content', article.description);
@@ -165,7 +165,7 @@ const Article: React.FC = () => {
             },
             "publisher": {
               "@type": "Organization",
-              "name": "Callbot.uk",
+              "name": "No Missed Calls",
               "logo": {
                 "@type": "ImageObject",
                 "url": "https://nomissedcalls.uk/logo.png"
