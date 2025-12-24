@@ -12,4 +12,42 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <!-- Case Studies -->
+  <url>
+    <loc>https://callbot.uk/blog/beauty-salon-case-study-lost-clients-to-competitors</loc>
+    <lastmod>2024-12-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://callbot.uk/blog/dental-practice-case-study-emergency-calls</loc>
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://callbot.uk/blog/auto-repair-shop-case-study-missed-calls</loc>
+    <lastmod>2024-12-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Educational Articles -->
+  <url>
+    <loc>https://callbot.uk/blog/missed-calls-cost-uk-business</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://callbot.uk/blog/ai-receptionist-vs-human-receptionist</loc>
+    <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://callbot.uk/blog/best-industries-for-ai-receptionists</loc>
+    <lastmod>2025-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
