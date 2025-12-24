@@ -1,18 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ClickPilot | Perfect Your Presence</title>
+    <title>Callbot.uk | AI Receptionist That Never Misses a Call</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'cb-bg': '#0A0A0B',
+              'cb-surface': '#111113',
+              'cb-primary': '#0066FF',
+              'cb-accent': '#8B5CF6',
+              'cb-success': '#10B981',
+              'cb-warning': '#F59E0B',
+              'cb-text': '#FFFFFF',
+              'cb-muted': '#A1A1AA',
+            }
+          }
+        }
+      }
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://fast.wistia.com/player.js" async></script>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
-      
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
       body {
-        font-family: 'Plus Jakarta Sans', sans-serif;
-        background-color: #141516;
+        font-family: 'Inter', sans-serif;
+        background-color: #0A0A0B;
+      }
+
+      .glow-blue {
+        box-shadow: 0 0 40px rgba(0, 102, 255, 0.3);
+      }
+
+      .glow-purple {
+        box-shadow: 0 0 40px rgba(139, 92, 246, 0.3);
+      }
+
+      .glow-border {
+        position: relative;
+      }
+
+      .glow-border::before {
+        content: '';
+        position: absolute;
+        inset: -2px;
+        border-radius: inherit;
+        padding: 2px;
+        background: linear-gradient(135deg, #0066FF, #8B5CF6, #0066FF);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        animation: borderGlow 3s ease-in-out infinite;
+      }
+
+      @keyframes borderGlow {
+        0%, 100% { opacity: 0.5; }
+        50% { opacity: 1; }
       }
 
       .floating-element {
@@ -20,32 +69,291 @@
       }
 
       @keyframes float {
-        0% { transform: translateY(0px); }
+        0%, 100% { transform: translateY(0px); }
         50% { transform: translateY(-20px); }
-        100% { transform: translateY(0px); }
       }
 
       .glass-card {
-        background: rgba(255, 255, 255, 0.03);
+        background: rgba(17, 17, 19, 0.8);
         backdrop-filter: blur(12px);
         border: 1px solid rgba(255, 255, 255, 0.1);
       }
 
-      .organic-blob {
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+      .counter {
+        font-variant-numeric: tabular-nums;
+      }
+
+      .gradient-text {
+        background: linear-gradient(135deg, #0066FF 0%, #8B5CF6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      .hero-gradient {
+        background: radial-gradient(ellipse at top, #111113 0%, #0A0A0B 70%);
+      }
+
+      .card-hover {
+        transition: all 0.3s ease;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 102, 255, 0.15);
+        border-color: rgba(0, 102, 255, 0.3);
+      }
+
+      /* Phone input styling */
+      input[type="tel"] {
+        -moz-appearance: textfield;
+      }
+
+      input[type="tel"]::-webkit-outer-spin-button,
+      input[type="tel"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* ===== PARTICLES ===== */
+      .particle {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background: #0066FF;
+        border-radius: 50%;
+        opacity: 0;
+        animation: particleFloat 12s infinite;
+      }
+
+      .particle:nth-child(even) {
+        background: #8B5CF6;
+      }
+
+      @keyframes particleFloat {
+        0% { transform: translateY(100vh) translateX(0); opacity: 0; }
+        10% { opacity: 0.6; }
+        90% { opacity: 0.4; }
+        100% { transform: translateY(-100vh) translateX(100px); opacity: 0; }
+      }
+
+      /* ===== ANIMATED ORBS ===== */
+      .orb {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(80px);
+        animation: orbMove 25s ease-in-out infinite;
+      }
+
+      @keyframes orbMove {
+        0%, 100% { transform: translate(0, 0) scale(1); }
+        25% { transform: translate(80px, -50px) scale(1.15); }
+        50% { transform: translate(-60px, 80px) scale(0.85); }
+        75% { transform: translate(40px, 40px) scale(1.1); }
+      }
+
+      /* ===== SOUND WAVES ===== */
+      .sound-wave-bar {
+        width: 4px;
+        background: linear-gradient(to top, #0066FF, #8B5CF6);
+        border-radius: 4px;
+        animation: soundWave 1.2s ease-in-out infinite;
+      }
+
+      @keyframes soundWave {
+        0%, 100% { height: 20px; }
+        50% { height: 40px; }
+      }
+
+      /* ===== PREMIUM GLOW CARD ===== */
+      @property --gradient-angle {
+        syntax: '<angle>';
+        initial-value: 0deg;
+        inherits: false;
+      }
+
+      .glow-card-animated {
+        position: relative;
+        background: rgba(17, 17, 19, 0.95);
+        border-radius: 24px;
+        overflow: hidden;
+      }
+
+      .glow-card-animated::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        padding: 1px;
+        background: linear-gradient(
+          var(--gradient-angle),
+          #0066FF,
+          #8B5CF6,
+          #10B981,
+          #0066FF
+        );
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        animation: rotateBorder 4s linear infinite;
+      }
+
+      @keyframes rotateBorder {
+        to { --gradient-angle: 360deg; }
+      }
+
+      /* ===== PREMIUM RANGE SLIDER ===== */
+      .premium-slider {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 10px;
+        border-radius: 10px;
+        background: linear-gradient(90deg, #0066FF, #8B5CF6);
+        outline: none;
+        box-shadow: 0 0 30px rgba(0, 102, 255, 0.4), inset 0 2px 4px rgba(0,0,0,0.3);
+      }
+
+      .premium-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: linear-gradient(145deg, #ffffff, #e0e0e0);
+        cursor: pointer;
+        border: 4px solid #0066FF;
+        box-shadow: 0 0 25px rgba(0, 102, 255, 0.8), 0 4px 15px rgba(0,0,0,0.3);
+        transition: all 0.2s ease;
+      }
+
+      .premium-slider::-webkit-slider-thumb:hover {
+        transform: scale(1.15);
+        box-shadow: 0 0 35px rgba(0, 102, 255, 1), 0 6px 20px rgba(0,0,0,0.4);
+      }
+
+      .premium-slider::-moz-range-thumb {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: linear-gradient(145deg, #ffffff, #e0e0e0);
+        cursor: pointer;
+        border: 4px solid #0066FF;
+        box-shadow: 0 0 25px rgba(0, 102, 255, 0.8);
+      }
+
+      /* ===== PULSE ANIMATION ===== */
+      .pulse-glow {
+        animation: pulseGlow 2s ease-in-out infinite;
+      }
+
+      @keyframes pulseGlow {
+        0%, 100% { box-shadow: 0 0 20px rgba(0, 102, 255, 0.3); }
+        50% { box-shadow: 0 0 40px rgba(0, 102, 255, 0.6), 0 0 60px rgba(139, 92, 246, 0.3); }
+      }
+
+      /* ===== SHIMMER EFFECT ===== */
+      .shimmer {
+        background: linear-gradient(
+          90deg,
+          transparent 0%,
+          rgba(255,255,255,0.1) 50%,
+          transparent 100%
+        );
+        background-size: 200% 100%;
+        animation: shimmer 3s infinite;
+      }
+
+      @keyframes shimmer {
+        0% { background-position: -200% 0; }
+        100% { background-position: 200% 0; }
+      }
+
+      /* ===== INVOICE TOTAL PULSE ===== */
+      .total-pulse {
+        animation: totalPulse 2s ease-in-out infinite;
+      }
+
+      @keyframes totalPulse {
+        0%, 100% {
+          transform: scale(1);
+          text-shadow: 0 0 10px rgba(220, 38, 38, 0.3);
+        }
+        50% {
+          transform: scale(1.02);
+          text-shadow: 0 0 20px rgba(220, 38, 38, 0.6);
+        }
+      }
+
+      /* ===== NEURAL NETWORK LOGO ===== */
+      .logo-neural {
+        position: relative;
+      }
+
+      .circuit-line {
+        stroke: url(#circuitGradient);
+        stroke-width: 2;
+        stroke-linecap: round;
+        fill: none;
+        stroke-dasharray: 20;
+        animation: circuitPulse 2s ease-in-out infinite;
+      }
+
+      .circuit-line:nth-child(2) { animation-delay: 0.3s; }
+      .circuit-line:nth-child(3) { animation-delay: 0.6s; }
+      .circuit-line:nth-child(4) { animation-delay: 0.9s; }
+
+      @keyframes circuitPulse {
+        0% { stroke-dashoffset: 20; opacity: 0.3; }
+        50% { stroke-dashoffset: 0; opacity: 1; }
+        100% { stroke-dashoffset: -20; opacity: 0.3; }
+      }
+
+      .neural-node {
+        fill: #0066FF;
+        animation: nodePulse 1.5s ease-in-out infinite;
+      }
+
+      .neural-node:nth-child(2) { animation-delay: 0.2s; }
+      .neural-node:nth-child(3) { animation-delay: 0.4s; }
+      .neural-node:nth-child(4) { animation-delay: 0.6s; }
+      .neural-node:nth-child(5) { animation-delay: 0.8s; }
+
+      @keyframes nodePulse {
+        0%, 100% { opacity: 0.4; r: 2; }
+        50% { opacity: 1; r: 3; }
+      }
+
+      .logo-core {
+        filter: drop-shadow(0 0 8px rgba(0, 102, 255, 0.6));
+      }
+
+      /* ===== TEXT SHIMMER FOR LOGO ===== */
+      .text-shimmer {
+        background: linear-gradient(
+          90deg,
+          #0066FF 0%,
+          #8B5CF6 25%,
+          #0066FF 50%,
+          #8B5CF6 75%,
+          #0066FF 100%
+        );
+        background-size: 200% 100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: textShimmer 3s linear infinite;
+      }
+
+      @keyframes textShimmer {
+        0% { background-position: 200% 0; }
+        100% { background-position: -200% 0; }
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
-  }
-}
-</script>
-</head>
-  <body class="text-white selection:bg-[#8B7EC8] selection:text-white">
+  </head>
+  <body class="text-white selection:bg-cb-primary selection:text-white">
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>

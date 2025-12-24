@@ -14,4 +14,5 @@ export interface ValueProp {
   description: string;
   icon: string;
   color: string;
+  cta: string;
 }
