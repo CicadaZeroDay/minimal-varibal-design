@@ -1,0 +1,8 @@
+# Callbot.uk Robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://callbot.uk/sitemap.xml

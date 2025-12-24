@@ -1,14 +1,17 @@
-
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { getLatestArticles } from '../content/articles';
 
 const Footer: React.FC = () => {
+  const latestArticles = getLatestArticles(3);
+
   return (
     <footer className="border-t border-white/5 bg-[#0A0A0B]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center gap-3 mb-4">
+            <Link to="/" className="flex items-center gap-3 mb-4">
               <div className="logo-neural w-12 h-12 relative">
                 <svg viewBox="0 0 48 48" className="w-full h-full">
                   <defs>
@@ -50,7 +53,7 @@ const Footer: React.FC = () => {
                 <span className="text-2xl font-extrabold tracking-tight text-shimmer">bot</span>
                 <span className="ml-1 px-1.5 py-0.5 text-[10px] font-bold bg-gradient-to-r from-[#0066FF] to-[#8B5CF6] rounded text-white uppercase tracking-wider">AI</span>
               </div>
-            </div>
+            </Link>
             <p className="text-[#A1A1AA] mb-6 max-w-sm">
               AI-powered receptionist for UK small businesses. Never miss a call, never lose a booking.
             </p>
@@ -65,6 +68,31 @@ const Footer: React.FC = () => {
                 <i className="fa-brands fa-whatsapp"></i>
               </a>
             </div>
+          </div>
+
+          {/* Latest Articles */}
+          <div>
+            <h4 className="font-semibold mb-4">Latest Articles</h4>
+            <ul className="space-y-3">
+              {latestArticles.map(article => (
+                <li key={article.slug}>
+                  <Link
+                    to={`/blog/${article.slug}`}
+                    className="text-[#A1A1AA] hover:text-white transition-colors text-sm line-clamp-2"
+                  >
+                    {article.title}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link
+                  to="/blog"
+                  className="text-[#0066FF] hover:text-[#0052CC] transition-colors text-sm inline-flex items-center gap-1"
+                >
+                  View all articles <i className="fa-solid fa-arrow-right text-xs"></i>
+                </Link>
+              </li>
+            </ul>
           </div>
 
           {/* Contact */}
