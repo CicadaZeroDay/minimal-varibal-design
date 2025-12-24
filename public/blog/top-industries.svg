@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#111113"/>
+      <stop offset="100%" stop-color="#0A0A0B"/>
+    </radialGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066FF"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="blur1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="60"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Decorative Orbs -->
+  <circle cx="150" cy="500" r="200" fill="#0066FF" opacity="0.08" filter="url(#blur1)"/>
+  <circle cx="1050" cy="130" r="180" fill="#8B5CF6" opacity="0.06" filter="url(#blur1)"/>
+
+  <!-- Category Badge -->
+  <rect x="80" y="80" width="180" height="36" rx="18" fill="#10B981"/>
+  <text x="170" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="white">INDUSTRY GUIDE</text>
+
+  <!-- Icon: Chart/List -->
+  <g transform="translate(600, 200)">
+    <circle cx="0" cy="0" r="80" fill="url(#accentGrad)" opacity="0.15"/>
+    <!-- Bar chart -->
+    <rect x="-40" y="10" width="15" height="35" rx="2" fill="#0066FF"/>
+    <rect x="-20" y="-10" width="15" height="55" rx="2" fill="#8B5CF6"/>
+    <rect x="0" y="-25" width="15" height="70" rx="2" fill="#0066FF"/>
+    <rect x="20" y="-40" width="15" height="85" rx="2" fill="#10B981"/>
+    <!-- Trophy on top -->
+    <g transform="translate(27, -55)">
+      <path d="M-8 0 L8 0 L6 12 L-6 12 Z" fill="#FFD700"/>
+      <rect x="-3" y="12" width="6" height="5" fill="#FFD700"/>
+      <rect x="-6" y="17" width="12" height="3" fill="#FFD700"/>
+    </g>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="360" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="white">Top 10 Industries That Benefit</text>
+  <text x="600" y="420" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="white">Most From <tspan fill="#10B981">AI Receptionists</tspan></text>
+
+  <!-- Industries Preview -->
+  <g transform="translate(600, 510)">
+    <rect x="-350" y="-15" width="100" height="30" rx="15" fill="#0066FF" opacity="0.2"/>
+    <text x="-300" y="5" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#0066FF">Dental 12x</text>
+
+    <rect x="-220" y="-15" width="100" height="30" rx="15" fill="#8B5CF6" opacity="0.2"/>
+    <text x="-170" y="5" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#8B5CF6">Plumbers 15x</text>
+
+    <rect x="-90" y="-15" width="100" height="30" rx="15" fill="#10B981" opacity="0.2"/>
+    <text x="-40" y="5" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#10B981">Salons 8x</text>
+
+    <rect x="40" y="-15" width="120" height="30" rx="15" fill="#0066FF" opacity="0.2"/>
+    <text x="100" y="5" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#0066FF">Estate Agents 20x</text>
+
+    <rect x="190" y="-15" width="100" height="30" rx="15" fill="#8B5CF6" opacity="0.2"/>
+    <text x="240" y="5" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#8B5CF6">Auto 10x</text>
+
+    <text x="320" y="5" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#A1A1AA">+5 more</text>
+  </g>
+
+  <!-- Brand -->
+  <text x="1120" y="600" text-anchor="end" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#A1A1AA">nomissedcalls.uk</text>
+</svg>

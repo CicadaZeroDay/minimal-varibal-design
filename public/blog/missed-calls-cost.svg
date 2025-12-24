@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#111113"/>
+      <stop offset="100%" stop-color="#0A0A0B"/>
+    </radialGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066FF"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="blur1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="60"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Decorative Orbs -->
+  <circle cx="900" cy="100" r="200" fill="#EF4444" opacity="0.08" filter="url(#blur1)"/>
+  <circle cx="300" cy="530" r="180" fill="#8B5CF6" opacity="0.06" filter="url(#blur1)"/>
+
+  <!-- Category Badge -->
+  <rect x="80" y="80" width="160" height="36" rx="18" fill="#EF4444"/>
+  <text x="160" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="white">BUSINESS TIPS</text>
+
+  <!-- Icon: Phone with X -->
+  <g transform="translate(600, 200)">
+    <circle cx="0" cy="0" r="80" fill="#EF4444" opacity="0.15"/>
+    <!-- Phone -->
+    <rect x="-25" y="-45" width="50" height="90" rx="8" fill="none" stroke="url(#accentGrad)" stroke-width="4"/>
+    <circle cx="0" cy="30" r="6" fill="url(#accentGrad)"/>
+    <!-- X mark -->
+    <g transform="translate(35, -35)">
+      <circle cx="0" cy="0" r="20" fill="#EF4444"/>
+      <path d="M-8 -8 L8 8 M8 -8 L-8 8" stroke="white" stroke-width="3" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="360" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="white">How Much Do Missed Calls</text>
+  <text x="600" y="420" text-anchor="middle" font-family="Inter, sans-serif" font-size="48" font-weight="800" fill="white">Cost <tspan fill="#EF4444">UK Businesses</tspan>?</text>
+
+  <!-- Stats -->
+  <g transform="translate(600, 510)">
+    <text x="-250" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="36" font-weight="800" fill="#EF4444">£47</text>
+    <text x="-250" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#A1A1AA">Per Missed Call</text>
+
+    <text x="0" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="36" font-weight="800" fill="#0066FF">62%</text>
+    <text x="0" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#A1A1AA">Calls Unanswered</text>
+
+    <text x="250" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="36" font-weight="800" fill="#8B5CF6">£13.5K</text>
+    <text x="250" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#A1A1AA">Annual Loss</text>
+  </g>
+
+  <!-- Brand -->
+  <text x="1120" y="600" text-anchor="end" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#A1A1AA">nomissedcalls.uk</text>
+</svg>

@@ -86,6 +86,7 @@ export const articles: Article[] = [
     publishedAt: '22 December 2024',
     category: 'Case Studies',
     tags: ['beauty salon', 'case study', 'missed calls', 'London', 'ROI'],
+    featuredImage: '/blog/beauty-salon.jpg',
     readTime: '6 min read'
   },
   {
@@ -173,6 +174,7 @@ export const articles: Article[] = [
     publishedAt: '20 December 2024',
     category: 'Case Studies',
     tags: ['dental practice', 'case study', 'emergency calls', 'Manchester', 'healthcare'],
+    featuredImage: '/blog/dental-practice.jpg',
     readTime: '7 min read'
   },
   {
@@ -272,6 +274,7 @@ export const articles: Article[] = [
     publishedAt: '18 December 2024',
     category: 'Case Studies',
     tags: ['auto repair', 'garage', 'case study', 'Birmingham', 'mechanics', 'missed calls'],
+    featuredImage: '/blog/auto-repair.jpg',
     readTime: '8 min read'
   },
   {
@@ -323,6 +326,7 @@ export const articles: Article[] = [
     publishedAt: '15 January 2025',
     category: 'Business Tips',
     tags: ['missed calls', 'ROI', 'UK business', 'revenue'],
+    featuredImage: '/blog/missed-calls-cost.jpg',
     readTime: '5 min read'
   },
   {
@@ -379,6 +383,7 @@ export const articles: Article[] = [
     publishedAt: '10 January 2025',
     category: 'Comparisons',
     tags: ['AI receptionist', 'hiring', 'costs', 'comparison'],
+    featuredImage: '/blog/ai-vs-human.jpg',
     readTime: '6 min read'
   },
   {
@@ -436,6 +441,7 @@ export const articles: Article[] = [
     publishedAt: '5 January 2025',
     category: 'Industry Guides',
     tags: ['industries', 'ROI', 'use cases', 'small business'],
+    featuredImage: '/blog/top-industries.jpg',
     readTime: '7 min read'
   }
 ];
