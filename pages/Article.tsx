@@ -78,10 +78,14 @@ const Article: React.FC = () => {
             </header>
 
             {/* Article Content */}
-            <div className="prose prose-invert prose-lg max-w-none mb-16">
+            <div className="article-content mb-16 text-[#E4E4E7] leading-relaxed">
               <div
-                className="article-content"
+                className="space-y-6"
                 dangerouslySetInnerHTML={{ __html: article.content }}
+                style={{
+                  fontSize: '18px',
+                  lineHeight: '1.75'
+                }}
               />
             </div>
 
