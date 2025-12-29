@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#111113"/>
+      <stop offset="100%" stop-color="#0A0A0B"/>
+    </radialGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066FF"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="blur1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="60"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Decorative Orbs -->
+  <circle cx="180" cy="120" r="200" fill="#0066FF" opacity="0.08" filter="url(#blur1)"/>
+  <circle cx="1020" cy="510" r="180" fill="#8B5CF6" opacity="0.06" filter="url(#blur1)"/>
+
+  <!-- Category Badge -->
+  <rect x="80" y="80" width="140" height="36" rx="18" fill="url(#accentGrad)"/>
+  <text x="150" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="white">CASE STUDY</text>
+
+  <!-- Icon: Pipe Wrench -->
+  <g transform="translate(600, 195)">
+    <circle cx="0" cy="0" r="80" fill="url(#accentGrad)" opacity="0.15"/>
+    <!-- Wrench body -->
+    <path d="M-40 40 L-15 15 L-5 25 L-30 50 Z" fill="url(#accentGrad)" opacity="0.3"/>
+    <path d="M-40 40 L15 -15" stroke="url(#accentGrad)" stroke-width="8" stroke-linecap="round"/>
+    <!-- Wrench head -->
+    <path d="M15 -15 L35 -35 L45 -25 L25 -5 Z" fill="none" stroke="url(#accentGrad)" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M25 -5 L40 10 Q50 20 40 30 L25 15" fill="none" stroke="url(#accentGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Water drop -->
+    <path d="M-10 -25 Q-10 -40 0 -45 Q10 -40 10 -25 Q10 -10 0 -5 Q-10 -10 -10 -25" fill="url(#accentGrad)" opacity="0.4"/>
+    <!-- Pipe -->
+    <rect x="-50" y="-5" width="30" height="12" rx="2" fill="none" stroke="url(#accentGrad)" stroke-width="3"/>
+    <rect x="-55" y="-8" width="8" height="18" rx="1" fill="none" stroke="url(#accentGrad)" stroke-width="2"/>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="355" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" font-weight="800" fill="white">This Leeds Plumber Was Losing</text>
+  <text x="600" y="410" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" font-weight="800" fill="white"><tspan fill="#EF4444">£800/Day</tspan> to Missed Emergency Calls</text>
+
+  <!-- Stats -->
+  <g transform="translate(600, 510)">
+    <text x="-200" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="#0066FF">+65%</text>
+    <text x="-200" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#A1A1AA">Revenue</text>
+
+    <text x="0" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="#10B981">2x</text>
+    <text x="0" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#A1A1AA">Emergency Jobs</text>
+
+    <text x="200" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="#8B5CF6">24x</text>
+    <text x="200" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#A1A1AA">ROI</text>
+  </g>
+
+  <!-- Brand -->
+  <text x="1120" y="600" text-anchor="end" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#A1A1AA">nomissedcalls.uk</text>
+</svg>

@@ -1,25 +1,25 @@
 import sharp from 'sharp';
-import { readFileSync, readdirSync } from 'fs';
-import { join, dirname, basename } from 'path';
+import fs from 'fs';
+import path from 'path';
 import { fileURLToPath } from 'url';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const blogDir = join(__dirname, '..', 'public', 'blog');
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-const files = readdirSync(blogDir).filter(f => f.endsWith('.svg'));
+const blogDir = path.join(__dirname, '../public/blog');
 
-for (const file of files) {
-  const svgPath = join(blogDir, file);
-  const jpgPath = join(blogDir, file.replace('.svg', '.jpg'));
+const jpgFiles = fs.readdirSync(blogDir).filter(f => f.endsWith('.jpg'));
 
-  const svgBuffer = readFileSync(svgPath);
+for (const file of jpgFiles) {
+  const inputPath = path.join(blogDir, file);
+  const webpName = file.replace('.jpg', '.webp');
+  const outputPath = path.join(blogDir, webpName);
 
-  await sharp(svgBuffer, { density: 150 })
-    .resize(1200, 630)
-    .jpeg({ quality: 90 })
-    .toFile(jpgPath);
+  await sharp(inputPath)
+    .webp({ quality: 85 })
+    .toFile(outputPath);
 
-  console.log(`Created ${basename(jpgPath)}`);
+  console.log('Converted:', file, '->', webpName);
 }
 
-console.log('Done!');
+console.log('Done! All images converted to WebP');
