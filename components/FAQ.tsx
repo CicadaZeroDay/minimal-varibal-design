@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { ChevronDown } from 'lucide-react';
 
 const faqs = [
   {
@@ -61,11 +62,11 @@ const FAQ: React.FC = () => {
                 className="w-full px-6 py-5 flex items-center justify-between text-left"
               >
                 <span className="font-semibold text-lg pr-4">{faq.question}</span>
-                <i
-                  className={`fa-solid fa-chevron-down text-[#0066FF] transition-transform ${
+                <ChevronDown
+                  className={`w-5 h-5 text-[#0066FF] transition-transform ${
                     openIndex === index ? 'rotate-180' : ''
                   }`}
-                ></i>
+                />
               </button>
 
               <div

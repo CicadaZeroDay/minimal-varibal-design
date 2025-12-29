@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const location = useLocation();
@@ -23,7 +24,7 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           {/* Logo - Neural Network Style */}
-          <Link to="/" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-3" aria-label="No Missed Calls - Home">
             <div className="logo-neural w-12 h-12 relative">
               <svg viewBox="0 0 48 48" className="w-full h-full">
                 <defs>
@@ -94,8 +95,10 @@ const Navbar: React.FC = () => {
           <button
             className="md:hidden text-[#A1A1AA] hover:text-white"
             onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+            aria-expanded={mobileOpen}
           >
-            <i className={`fa-solid ${mobileOpen ? 'fa-xmark' : 'fa-bars'} text-2xl`}></i>
+            {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
 

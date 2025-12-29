@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { Home, Newspaper } from 'lucide-react';
 
 const NotFound: React.FC = () => {
   return (
@@ -26,14 +27,14 @@ const NotFound: React.FC = () => {
               to="/"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#0066FF] text-white rounded-xl font-bold hover:bg-[#0052CC] transition-all glow-border"
             >
-              <i className="fa-solid fa-home"></i>
+              <Home className="w-5 h-5" />
               Go Home
             </Link>
             <Link
               to="/blog"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-white/20 text-white rounded-xl font-bold hover:bg-white/5 transition-all"
             >
-              <i className="fa-solid fa-newspaper"></i>
+              <Newspaper className="w-5 h-5" />
               Read Blog
             </Link>
           </div>

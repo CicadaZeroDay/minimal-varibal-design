@@ -104,6 +104,7 @@ const Calculator: React.FC = () => {
                     max="50"
                     value={missedCalls}
                     onChange={(e) => setMissedCalls(parseInt(e.target.value))}
+                    aria-label="Number of missed calls per week"
                     className="premium-slider relative z-10"
                   />
                 </div>
@@ -121,10 +122,11 @@ const Calculator: React.FC = () => {
 
               {/* Industry Dropdown */}
               <div>
-                <label className="text-sm font-medium text-[#A1A1AA] mb-3 block">Your industry</label>
+                <label id="industry-label" className="text-sm font-medium text-[#A1A1AA] mb-3 block">Your industry</label>
                 <select
                   value={industry}
                   onChange={(e) => handleIndustryChange(e.target.value)}
+                  aria-labelledby="industry-label"
                   className="w-full px-5 py-4 bg-[#111113] border border-white/10 rounded-xl text-white focus:outline-none focus:border-[#0066FF] focus:ring-2 focus:ring-[#0066FF]/20 cursor-pointer transition-all"
                 >
                   {industries.map(ind => (
@@ -142,6 +144,7 @@ const Calculator: React.FC = () => {
                     type="number"
                     value={avgValue}
                     onChange={(e) => setAvgValue(parseInt(e.target.value) || 0)}
+                    aria-label="Average booking value in pounds"
                     className="w-full pl-10 pr-5 py-4 bg-[#111113] border border-white/10 rounded-xl text-white text-lg focus:outline-none focus:border-[#0066FF] focus:ring-2 focus:ring-[#0066FF]/20 transition-all"
                   />
                 </div>

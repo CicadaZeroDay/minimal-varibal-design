@@ -1,11 +1,12 @@
 
 import React from 'react';
+import { Phone, CalendarCheck, Zap, Building2, Shield, Lock } from 'lucide-react';
 
 const metrics = [
-  { value: '5,000+', label: 'Calls Handled', icon: 'fa-phone' },
-  { value: '94%', label: 'Booking Rate', icon: 'fa-calendar-check' },
-  { value: '<3s', label: 'Response Time', icon: 'fa-bolt' },
-  { value: '10+', label: 'UK Businesses', icon: 'fa-building' },
+  { value: '5,000+', label: 'Calls Handled', Icon: Phone },
+  { value: '94%', label: 'Booking Rate', Icon: CalendarCheck },
+  { value: '<3s', label: 'Response Time', Icon: Zap },
+  { value: '10+', label: 'UK Businesses', Icon: Building2 },
 ];
 
 const SocialProof: React.FC = () => {
@@ -16,7 +17,7 @@ const SocialProof: React.FC = () => {
           {metrics.map((metric, index) => (
             <div key={index} className="text-center group">
               <div className="flex items-center justify-center gap-3 mb-2">
-                <i className={`fa-solid ${metric.icon} text-[#0066FF] group-hover:scale-110 transition-transform`}></i>
+                <metric.Icon className="w-5 h-5 text-[#0066FF] group-hover:scale-110 transition-transform" />
                 <span className="text-3xl md:text-4xl font-bold counter">{metric.value}</span>
               </div>
               <p className="text-sm text-[#A1A1AA] uppercase tracking-widest">{metric.label}</p>
@@ -27,15 +28,15 @@ const SocialProof: React.FC = () => {
         {/* Trust Elements */}
         <div className="flex flex-wrap items-center justify-center gap-6 mt-8 pt-8 border-t border-white/5">
           <span className="flex items-center gap-2 text-sm text-[#A1A1AA]">
-            <i className="fa-solid fa-shield-halved text-[#0066FF]"></i>
+            <Shield className="w-4 h-4 text-[#0066FF]" />
             Powered by enterprise-grade AI
           </span>
           <span className="flex items-center gap-2 text-sm text-[#A1A1AA]">
-            <img src="https://flagcdn.com/w20/gb.png" alt="UK" className="w-4 h-3 rounded-sm" />
+            <img src="https://flagcdn.com/w20/gb.png" alt="UK flag" className="w-4 h-auto rounded-sm" loading="lazy" width="20" height="16" />
             British English Native Voice
           </span>
           <span className="flex items-center gap-2 text-sm text-[#A1A1AA]">
-            <i className="fa-solid fa-lock text-[#10B981]"></i>
+            <Lock className="w-4 h-4 text-[#10B981]" />
             GDPR Compliant
           </span>
         </div>

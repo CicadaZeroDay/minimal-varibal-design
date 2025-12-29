@@ -1,26 +1,27 @@
 
 import React from 'react';
+import { TrendingUp, Smile, Eye, Phone, Bot, CalendarCheck, ArrowRight } from 'lucide-react';
 
 const outcomes = [
   {
     stat: '40%',
     title: 'More Bookings',
     description: 'Capture revenue from calls you\'re currently missing',
-    icon: 'fa-chart-line',
+    Icon: TrendingUp,
     color: '#10B981'
   },
   {
     stat: 'Zero',
     title: 'Staff Stress',
     description: 'Stop interrupting clients to grab the phone',
-    icon: 'fa-face-smile',
+    Icon: Smile,
     color: '#0066FF'
   },
   {
     stat: '100%',
     title: 'Visibility',
     description: 'Full transcripts, SMS follow-ups, booking confirmations',
-    icon: 'fa-eye',
+    Icon: Eye,
     color: '#8B5CF6'
   }
 ];
@@ -37,21 +38,21 @@ const ValueProposition: React.FC = () => {
         <div className="inline-flex flex-wrap items-center justify-center gap-4 mt-8 p-6 rounded-2xl bg-[#111113] border border-white/10">
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 rounded-full bg-[#0066FF]/20 flex items-center justify-center">
-              <i className="fa-solid fa-phone text-[#0066FF]"></i>
+              <Phone className="w-5 h-5 text-[#0066FF]" />
             </div>
             <span className="font-medium">We create your number</span>
           </div>
-          <i className="fa-solid fa-arrow-right text-[#A1A1AA]"></i>
+          <ArrowRight className="w-5 h-5 text-[#A1A1AA]" />
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 rounded-full bg-[#8B5CF6]/20 flex items-center justify-center">
-              <i className="fa-solid fa-robot text-[#8B5CF6]"></i>
+              <Bot className="w-5 h-5 text-[#8B5CF6]" />
             </div>
             <span className="font-medium">Get an AI receptionist</span>
           </div>
-          <i className="fa-solid fa-arrow-right text-[#A1A1AA]"></i>
+          <ArrowRight className="w-5 h-5 text-[#A1A1AA]" />
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 rounded-full bg-[#10B981]/20 flex items-center justify-center">
-              <i className="fa-solid fa-calendar-check text-[#10B981]"></i>
+              <CalendarCheck className="w-5 h-5 text-[#10B981]" />
             </div>
             <span className="font-medium">Never miss a booking</span>
           </div>
@@ -69,7 +70,7 @@ const ValueProposition: React.FC = () => {
                 className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6"
                 style={{ backgroundColor: `${outcome.color}20` }}
               >
-                <i className={`fa-solid ${outcome.icon} text-3xl`} style={{ color: outcome.color }}></i>
+                <outcome.Icon className="w-8 h-8" style={{ color: outcome.color }} />
               </div>
               <div className="text-5xl font-extrabold mb-2" style={{ color: outcome.color }}>
                 {outcome.stat}

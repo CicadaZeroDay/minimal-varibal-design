@@ -3,6 +3,7 @@ import { useParams, Link, Navigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { articles, getArticleBySlug } from '../content/articles';
+import { ChevronRight, ArrowRight } from 'lucide-react';
 
 const Article: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -43,9 +44,9 @@ const Article: React.FC = () => {
             {/* Breadcrumbs */}
             <nav className="flex items-center gap-2 text-sm text-[#A1A1AA] mb-8">
               <Link to="/" className="hover:text-white transition-colors">Home</Link>
-              <i className="fa-solid fa-chevron-right text-xs"></i>
+              <ChevronRight className="w-3 h-3" />
               <Link to="/blog" className="hover:text-white transition-colors">Blog</Link>
-              <i className="fa-solid fa-chevron-right text-xs"></i>
+              <ChevronRight className="w-3 h-3" />
               <span className="text-white truncate max-w-[200px]">{article.title}</span>
             </nav>
 
@@ -117,7 +118,7 @@ const Article: React.FC = () => {
                   className="inline-flex items-center gap-2 px-8 py-4 bg-[#0066FF] text-white rounded-xl font-bold text-lg hover:bg-[#0052CC] transition-all glow-border"
                 >
                   Get Demo Call
-                  <i className="fa-solid fa-arrow-right"></i>
+                  <ArrowRight className="w-5 h-5" />
                 </Link>
               </div>
             </div>

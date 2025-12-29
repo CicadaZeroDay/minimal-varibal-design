@@ -1,21 +1,22 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Phone, CalendarCheck, Headset, PhoneCall, Loader2, Check, PlayCircle, ArrowRight, ChevronDown, X } from 'lucide-react';
 
 // Функция форматирования номера телефона для UK формата
 const formatPhoneNumber = (value: string): string => {
   // Убираем все нецифровые символы
   const numbers = value.replace(/\D/g, '');
-  
+
   // Ограничиваем до 10 цифр (UK мобильные номера без первой 0)
   const limited = numbers.slice(0, 10);
-  
+
   // Форматируем: XXXX XXXXXX
   if (limited.length <= 4) {
     return limited;
   } else if (limited.length <= 10) {
     return `${limited.slice(0, 4)} ${limited.slice(4)}`;
   }
-  
+
   return limited;
 };
 
@@ -30,6 +31,18 @@ const Hero: React.FC = () => {
   const [isSuccess, setIsSuccess] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [showVideo, setShowVideo] = useState(false);
+  const [wistiaLoaded, setWistiaLoaded] = useState(false);
+
+  // Load Wistia script dynamically when video modal opens
+  useEffect(() => {
+    if (showVideo && !wistiaLoaded) {
+      const script = document.createElement('script');
+      script.src = 'https://fast.wistia.com/player.js';
+      script.async = true;
+      script.onload = () => setWistiaLoaded(true);
+      document.head.appendChild(script);
+    }
+  }, [showVideo, wistiaLoaded]);
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const formatted = formatPhoneNumber(e.target.value);
@@ -43,7 +56,7 @@ const Hero: React.FC = () => {
     setError(null);
 
     const cleanPhone = getCleanPhoneNumber(phone);
-    
+
     if (cleanPhone.length < 10) {
       setError('Please enter a valid phone number');
       setIsLoading(false);
@@ -63,7 +76,7 @@ const Hero: React.FC = () => {
 
       const data = await response.json().catch(() => ({}));
       console.log('Webhook success:', data);
-      
+
       setIsSuccess(true);
     } catch (error) {
       console.error('Webhook error:', error);
@@ -74,59 +87,25 @@ const Hero: React.FC = () => {
     }
   };
 
-  // Generate particles with random positions and delays
-  const particles = Array.from({ length: 30 }, (_, i) => ({
-    left: `${Math.random() * 100}%`,
-    animationDelay: `${Math.random() * 12}s`,
-    animationDuration: `${10 + Math.random() * 8}s`,
-  }));
-
   return (
     <section className="relative min-h-screen flex items-center justify-center hero-gradient overflow-hidden pt-20 pb-32">
-      {/* ===== ANIMATED BACKGROUND ===== */}
+      {/* ===== STATIC BACKGROUND (no orbs/particles to avoid CLS) ===== */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Animated Orbs */}
-        <div
-          className="orb absolute top-[10%] left-[20%] w-[500px] h-[500px] bg-[#0066FF]/30"
-          style={{ animationDelay: '0s' }}
-        ></div>
-        <div
-          className="orb absolute top-[40%] right-[10%] w-[400px] h-[400px] bg-[#8B5CF6]/25"
-          style={{ animationDelay: '-8s' }}
-        ></div>
-        <div
-          className="orb absolute bottom-[10%] left-[30%] w-[350px] h-[350px] bg-[#10B981]/20"
-          style={{ animationDelay: '-15s' }}
-        ></div>
-
-        {/* Particles */}
-        {particles.map((p, i) => (
-          <div
-            key={i}
-            className="particle"
-            style={{
-              left: p.left,
-              bottom: '-10px',
-              animationDelay: p.animationDelay,
-              animationDuration: p.animationDuration,
-            }}
-          ></div>
-        ))}
 
         {/* Floating Elements - Hidden on mobile */}
         <div className="hidden lg:block absolute top-1/4 left-[8%] floating-element opacity-30">
           <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#0066FF] to-[#8B5CF6] flex items-center justify-center">
-            <i className="fa-solid fa-phone text-2xl text-white"></i>
+            <Phone className="w-6 h-6 text-white" />
           </div>
         </div>
         <div className="hidden lg:block absolute top-1/3 right-[12%] floating-element opacity-25" style={{animationDelay: '2s'}}>
           <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#8B5CF6] to-[#10B981] flex items-center justify-center">
-            <i className="fa-solid fa-calendar-check text-xl text-white"></i>
+            <CalendarCheck className="w-5 h-5 text-white" />
           </div>
         </div>
         <div className="hidden lg:block absolute bottom-1/3 left-[15%] floating-element opacity-20" style={{animationDelay: '4s'}}>
           <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#10B981] to-[#0066FF] flex items-center justify-center">
-            <i className="fa-solid fa-headset text-lg text-white"></i>
+            <Headset className="w-4 h-4 text-white" />
           </div>
         </div>
 
@@ -146,7 +125,7 @@ const Hero: React.FC = () => {
         {/* Trust Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium mb-8 pulse-glow">
           <span className="flex items-center gap-2">
-            <img src="https://flagcdn.com/w20/gb.png" alt="UK" className="w-5 h-4 rounded-sm" />
+            <img src="https://flagcdn.com/w20/gb.png" alt="UK flag" className="w-5 h-auto rounded-sm" loading="lazy" width="20" height="16" />
             British English Native Voice
           </span>
           <span className="w-1 h-1 rounded-full bg-white/30"></span>
@@ -160,7 +139,7 @@ const Hero: React.FC = () => {
         </h1>
 
         {/* Subheadline */}
-        <p className="text-xl md:text-2xl text-[#A1A1AA] max-w-3xl mx-auto mb-8 leading-relaxed">
+        <p className="text-xl md:text-2xl text-[#D4D4D8] max-w-3xl mx-auto mb-8 leading-relaxed">
           24/7 AI receptionist that speaks like a native, books appointments, and never puts customers on hold.{' '}
           <span className="text-white font-medium">Try it yourself — get a demo call in 30 seconds.</span>
         </p>
@@ -175,10 +154,10 @@ const Hero: React.FC = () => {
         {isSuccess ? (
           <div className="max-w-md mx-auto mb-6 p-6 rounded-2xl bg-[#10B981]/10 border border-[#10B981]/30 text-center">
             <div className="w-16 h-16 rounded-full bg-[#10B981]/20 flex items-center justify-center mx-auto mb-4">
-              <i className="fa-solid fa-phone-volume text-3xl text-[#10B981] animate-pulse"></i>
+              <PhoneCall className="w-8 h-8 text-[#10B981] animate-pulse" />
             </div>
             <h3 className="text-xl font-bold text-[#10B981] mb-2">Sophie is calling you!</h3>
-            <p className="text-[#A1A1AA]">
+            <p className="text-[#D4D4D8]">
               Demo call to <span className="text-white font-medium">+44 {getCleanPhoneNumber(phone)}</span> in 30 seconds
             </p>
           </div>
@@ -186,7 +165,7 @@ const Hero: React.FC = () => {
           <form onSubmit={handleSubmit} className="max-w-md mx-auto mb-6">
             <div className="flex flex-col sm:flex-row gap-3">
               <div className="flex-1 relative">
-                <div className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center gap-2 text-[#A1A1AA]">
+                <div className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center gap-2 text-[#D4D4D8]">
                   <span className="text-sm font-medium">+44</span>
                   <div className="w-px h-6 bg-white/20"></div>
                 </div>
@@ -195,6 +174,7 @@ const Hero: React.FC = () => {
                   value={phone}
                   onChange={handlePhoneChange}
                   placeholder="7700 123456"
+                  aria-label="Enter your UK phone number for demo call"
                   className="w-full pl-20 pr-4 py-4 bg-[#111113] border border-white/10 rounded-xl text-white placeholder:text-[#A1A1AA]/50 focus:outline-none focus:border-[#0066FF] focus:ring-2 focus:ring-[#0066FF]/20 transition-all text-lg"
                   required
                 />
@@ -205,11 +185,12 @@ const Hero: React.FC = () => {
               <button
                 type="submit"
                 disabled={isLoading}
-                className="glow-border px-8 py-4 bg-[#0066FF] text-white rounded-xl font-bold text-lg hover:bg-[#0052CC] transition-all disabled:opacity-50 whitespace-nowrap"
+                className="glow-border px-8 py-4 bg-[#0066FF] text-white rounded-xl font-bold text-lg hover:bg-[#0052CC] transition-all disabled:opacity-50 whitespace-nowrap focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:ring-offset-2 focus:ring-offset-[#0A0A0B]"
+                aria-label={isLoading ? "Submitting phone number" : "Request demo call"}
               >
                 {isLoading ? (
                   <span className="flex items-center gap-2">
-                    <i className="fa-solid fa-spinner animate-spin"></i>
+                    <Loader2 className="w-5 h-5 animate-spin" />
                     Calling...
                   </span>
                 ) : (
@@ -221,17 +202,17 @@ const Hero: React.FC = () => {
         )}
 
         {/* Trust Indicators */}
-        <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-[#A1A1AA] mb-6">
+        <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-[#D4D4D8] mb-6">
           <span className="flex items-center gap-2">
-            <i className="fa-solid fa-check text-[#10B981]"></i>
+            <Check className="w-4 h-4 text-[#10B981]" />
             No signup required
           </span>
           <span className="flex items-center gap-2">
-            <i className="fa-solid fa-check text-[#10B981]"></i>
+            <Check className="w-4 h-4 text-[#10B981]" />
             No credit card
           </span>
           <span className="flex items-center gap-2">
-            <i className="fa-solid fa-check text-[#10B981]"></i>
+            <Check className="w-4 h-4 text-[#10B981]" />
             Just 30 seconds
           </span>
         </div>
@@ -240,19 +221,20 @@ const Hero: React.FC = () => {
         <div className="mt-4">
           <button
             onClick={() => setShowVideo(true)}
-            className="inline-flex items-center gap-2 text-[#A1A1AA] hover:text-white transition-colors group"
+            className="inline-flex items-center gap-2 text-[#D4D4D8] hover:text-white transition-colors group focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:ring-offset-2 focus:ring-offset-[#0A0A0B] rounded-lg px-2 py-1"
+            aria-label="Watch video demonstration of Sophie handling a booking"
           >
-            <i className="fa-solid fa-play-circle text-[#0066FF] group-hover:scale-110 transition-transform"></i>
+            <PlayCircle className="w-5 h-5 text-[#0066FF] group-hover:scale-110 transition-transform" />
             See how Sophie handles a booking
-            <i className="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-[#A1A1AA] animate-bounce">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-[#D4D4D8] animate-bounce" aria-label="Scroll down to see more content">
         <span className="text-xs uppercase tracking-widest">See how it works</span>
-        <i className="fa-solid fa-chevron-down"></i>
+        <ChevronDown className="w-4 h-4" />
       </div>
 
       {/* Video Modal */}
@@ -268,9 +250,10 @@ const Hero: React.FC = () => {
             {/* Close Button */}
             <button
               onClick={() => setShowVideo(false)}
-              className="absolute -top-12 right-0 text-white/70 hover:text-white transition-colors"
+              className="absolute -top-12 right-0 text-white/70 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded-lg p-2"
+              aria-label="Close video modal"
             >
-              <i className="fa-solid fa-xmark text-3xl"></i>
+              <X className="w-8 h-8" />
             </button>
 
             {/* Wistia Player */}

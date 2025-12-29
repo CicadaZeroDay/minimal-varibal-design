@@ -1,21 +1,22 @@
 
 import React, { useState } from 'react';
+import { PhoneCall, Loader2, Check } from 'lucide-react';
 
 // Функция форматирования номера телефона для UK формата
 const formatPhoneNumber = (value: string): string => {
   // Убираем все нецифровые символы
   const numbers = value.replace(/\D/g, '');
-  
+
   // Ограничиваем до 10 цифр (UK мобильные номера без первой 0)
   const limited = numbers.slice(0, 10);
-  
+
   // Форматируем: XXXX XXXXXX
   if (limited.length <= 4) {
     return limited;
   } else if (limited.length <= 10) {
     return `${limited.slice(0, 4)} ${limited.slice(4)}`;
   }
-  
+
   return limited;
 };
 
@@ -42,7 +43,7 @@ const FinalCTA: React.FC = () => {
     setError(null);
 
     const cleanPhone = getCleanPhoneNumber(phone);
-    
+
     if (cleanPhone.length < 10) {
       setError('Please enter a valid phone number');
       setIsLoading(false);
@@ -62,7 +63,7 @@ const FinalCTA: React.FC = () => {
 
       const data = await response.json().catch(() => ({}));
       console.log('Webhook success:', data);
-      
+
       setIsSuccess(true);
     } catch (error) {
       console.error('Webhook error:', error);
@@ -93,7 +94,7 @@ const FinalCTA: React.FC = () => {
             {isSuccess ? (
               <div className="max-w-md mx-auto mb-6 p-6 rounded-2xl bg-[#10B981]/10 border border-[#10B981]/30">
                 <div className="w-16 h-16 rounded-full bg-[#10B981]/20 flex items-center justify-center mx-auto mb-4">
-                  <i className="fa-solid fa-phone-volume text-3xl text-[#10B981] animate-pulse"></i>
+                  <PhoneCall className="w-8 h-8 text-[#10B981] animate-pulse" />
                 </div>
                 <h3 className="text-xl font-bold text-[#10B981] mb-2">Sophie is calling you!</h3>
                 <p className="text-[#A1A1AA]">
@@ -114,6 +115,7 @@ const FinalCTA: React.FC = () => {
                         value={phone}
                         onChange={handlePhoneChange}
                         placeholder="7700 123456"
+                        aria-label="Enter your UK phone number for demo call"
                         className="w-full pl-20 pr-4 py-4 bg-[#0A0A0B] border border-white/20 rounded-xl text-white placeholder:text-[#A1A1AA]/50 focus:outline-none focus:border-[#0066FF] focus:ring-2 focus:ring-[#0066FF]/20 transition-all text-lg"
                         required
                       />
@@ -128,7 +130,7 @@ const FinalCTA: React.FC = () => {
                     >
                       {isLoading ? (
                         <span className="flex items-center gap-2">
-                          <i className="fa-solid fa-spinner animate-spin"></i>
+                          <Loader2 className="w-5 h-5 animate-spin" />
                           Calling...
                         </span>
                       ) : (
@@ -141,15 +143,15 @@ const FinalCTA: React.FC = () => {
                 {/* Trust Indicators */}
                 <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-[#A1A1AA]">
                   <span className="flex items-center gap-2">
-                    <i className="fa-solid fa-check text-[#10B981]"></i>
+                    <Check className="w-4 h-4 text-[#10B981]" />
                     No signup required
                   </span>
                   <span className="flex items-center gap-2">
-                    <i className="fa-solid fa-check text-[#10B981]"></i>
+                    <Check className="w-4 h-4 text-[#10B981]" />
                     No credit card
                   </span>
                   <span className="flex items-center gap-2">
-                    <i className="fa-solid fa-check text-[#10B981]"></i>
+                    <Check className="w-4 h-4 text-[#10B981]" />
                     Just 30 seconds
                   </span>
                 </div>

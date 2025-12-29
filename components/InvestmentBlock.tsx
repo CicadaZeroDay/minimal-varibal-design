@@ -1,21 +1,22 @@
 
 import React, { useState } from 'react';
+import { Check, Tag, PhoneCall, Loader2 } from 'lucide-react';
 
 // Функция форматирования номера телефона для UK формата
 const formatPhoneNumber = (value: string): string => {
   // Убираем все нецифровые символы
   const numbers = value.replace(/\D/g, '');
-  
+
   // Ограничиваем до 10 цифр (UK мобильные номера без первой 0)
   const limited = numbers.slice(0, 10);
-  
+
   // Форматируем: XXXX XXXXXX
   if (limited.length <= 4) {
     return limited;
   } else if (limited.length <= 10) {
     return `${limited.slice(0, 4)} ${limited.slice(4)}`;
   }
-  
+
   return limited;
 };
 
@@ -48,7 +49,7 @@ const InvestmentBlock: React.FC = () => {
     setError(null);
 
     const cleanPhone = getCleanPhoneNumber(phone);
-    
+
     if (cleanPhone.length < 10) {
       setError('Please enter a valid phone number');
       setIsLoading(false);
@@ -68,7 +69,7 @@ const InvestmentBlock: React.FC = () => {
 
       const data = await response.json().catch(() => ({}));
       console.log('Webhook success:', data);
-      
+
       setIsSuccess(true);
     } catch (error) {
       console.error('Webhook error:', error);
@@ -198,31 +199,31 @@ const InvestmentBlock: React.FC = () => {
               </div>
               <ul className="space-y-2 text-sm text-[#A1A1AA] mb-6 flex-1">
                 <li className="flex items-center gap-2">
-                  <i className="fa-solid fa-check text-[#0066FF]"></i>
+                  <Check className="w-4 h-4 text-[#0066FF]" />
                   24/7 AI receptionist
                 </li>
                 <li className="flex items-center gap-2">
-                  <i className="fa-solid fa-check text-[#0066FF]"></i>
+                  <Check className="w-4 h-4 text-[#0066FF]" />
                   Unlimited calls
                 </li>
                 <li className="flex items-center gap-2">
-                  <i className="fa-solid fa-check text-[#0066FF]"></i>
+                  <Check className="w-4 h-4 text-[#0066FF]" />
                   Native British voice
                 </li>
                 <li className="flex items-center gap-2">
-                  <i className="fa-solid fa-check text-[#0066FF]"></i>
+                  <Check className="w-4 h-4 text-[#0066FF]" />
                   Instant answering (&lt;3s)
                 </li>
                 <li className="flex items-center gap-2">
-                  <i className="fa-solid fa-check text-[#0066FF]"></i>
+                  <Check className="w-4 h-4 text-[#0066FF]" />
                   SMS booking confirmations
                 </li>
                 <li className="flex items-center gap-2">
-                  <i className="fa-solid fa-check text-[#0066FF]"></i>
+                  <Check className="w-4 h-4 text-[#0066FF]" />
                   Full call transcripts
                 </li>
                 <li className="flex items-center gap-2">
-                  <i className="fa-solid fa-check text-[#0066FF]"></i>
+                  <Check className="w-4 h-4 text-[#0066FF]" />
                   Real-time notifications
                 </li>
               </ul>
@@ -247,24 +248,24 @@ const InvestmentBlock: React.FC = () => {
                   <span className="text-[#A1A1AA]">/year</span>
                 </div>
                 <div className="inline-flex items-center gap-2 text-sm text-[#10B981] font-medium mb-6 pb-6 border-b border-white/10">
-                  <i className="fa-solid fa-tag"></i>
+                  <Tag className="w-4 h-4" />
                   Save £2,288 — Setup FREE
                 </div>
                 <ul className="space-y-2 text-sm text-[#A1A1AA] mb-6 flex-1">
                   <li className="flex items-center gap-2">
-                    <i className="fa-solid fa-check text-[#10B981]"></i>
+                    <Check className="w-4 h-4 text-[#10B981]" />
                     <strong className="text-white">Everything in Monthly</strong>
                   </li>
                   <li className="flex items-center gap-2">
-                    <i className="fa-solid fa-check text-[#10B981]"></i>
+                    <Check className="w-4 h-4 text-[#10B981]" />
                     <strong className="text-white">FREE setup</strong> (save £450)
                   </li>
                   <li className="flex items-center gap-2">
-                    <i className="fa-solid fa-check text-[#10B981]"></i>
+                    <Check className="w-4 h-4 text-[#10B981]" />
                     Priority support
                   </li>
                   <li className="flex items-center gap-2">
-                    <i className="fa-solid fa-check text-[#10B981]"></i>
+                    <Check className="w-4 h-4 text-[#10B981]" />
                     Dedicated account manager
                   </li>
                 </ul>
@@ -292,7 +293,7 @@ const InvestmentBlock: React.FC = () => {
               {isSuccess ? (
                 <div className="text-center py-4">
                   <div className="w-16 h-16 rounded-full bg-[#10B981]/20 flex items-center justify-center mx-auto mb-4">
-                    <i className="fa-solid fa-phone-volume text-3xl text-[#10B981] animate-pulse"></i>
+                    <PhoneCall className="w-8 h-8 text-[#10B981] animate-pulse" />
                   </div>
                   <h3 className="text-xl font-bold text-[#10B981] mb-2">Sophie is calling you!</h3>
                   <p className="text-[#A1A1AA]">
@@ -315,6 +316,7 @@ const InvestmentBlock: React.FC = () => {
                           value={phone}
                           onChange={handlePhoneChange}
                           placeholder="7700 123456"
+                          aria-label="Enter your UK phone number for demo call"
                           className="w-full pl-20 pr-4 py-4 bg-[#0A0A0B] border border-white/20 rounded-xl text-white placeholder:text-[#A1A1AA]/50 focus:outline-none focus:border-[#0066FF] focus:ring-2 focus:ring-[#0066FF]/20 transition-all text-lg"
                           required
                         />
@@ -329,7 +331,7 @@ const InvestmentBlock: React.FC = () => {
                       >
                         {isLoading ? (
                           <span className="flex items-center justify-center gap-2">
-                            <i className="fa-solid fa-spinner animate-spin"></i>
+                            <Loader2 className="w-5 h-5 animate-spin" />
                             Calling...
                           </span>
                         ) : (

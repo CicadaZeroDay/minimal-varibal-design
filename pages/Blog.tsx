@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import BlogCard from '../components/blog/BlogCard';
 import { articles } from '../content/articles';
+import { FileText } from 'lucide-react';
 
 const Blog: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
@@ -19,8 +20,8 @@ const Blog: React.FC = () => {
   const categories = ['All', ...Array.from(new Set(articles.map(a => a.category)))];
 
   // Filter articles by category
-  const filteredArticles = selectedCategory === 'All' 
-    ? articles 
+  const filteredArticles = selectedCategory === 'All'
+    ? articles
     : articles.filter(a => a.category === selectedCategory);
 
   return (
@@ -52,11 +53,13 @@ const Blog: React.FC = () => {
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:ring-offset-2 focus:ring-offset-[#0A0A0B] ${
                     selectedCategory === category
                       ? 'bg-[#0066FF] text-white shadow-lg shadow-[#0066FF]/30'
-                      : 'bg-white/5 text-[#A1A1AA] hover:bg-white/10 hover:text-white border border-white/10'
+                      : 'bg-white/5 text-[#E4E4E7] hover:bg-white/10 hover:text-white border border-white/10'
                   }`}
+                  aria-label={`Filter articles by ${category}`}
+                  aria-pressed={selectedCategory === category}
                 >
                   {category}
                 </button>
@@ -76,7 +79,7 @@ const Blog: React.FC = () => {
               </div>
             ) : (
               <div className="text-center py-20">
-                <i className="fa-solid fa-file-lines text-6xl text-[#A1A1AA]/30 mb-6"></i>
+                <FileText className="w-16 h-16 text-[#A1A1AA]/30 mx-auto mb-6" />
                 <h2 className="text-2xl font-bold mb-2">No articles found</h2>
                 <p className="text-[#A1A1AA]">Try selecting a different category.</p>
               </div>
@@ -84,7 +87,7 @@ const Blog: React.FC = () => {
 
             {articles.length === 0 && (
               <div className="text-center py-20">
-                <i className="fa-solid fa-file-lines text-6xl text-[#A1A1AA]/30 mb-6"></i>
+                <FileText className="w-16 h-16 text-[#A1A1AA]/30 mx-auto mb-6" />
                 <h2 className="text-2xl font-bold mb-2">Coming Soon</h2>
                 <p className="text-[#A1A1AA]">We're working on exciting content for you. Check back soon!</p>
               </div>

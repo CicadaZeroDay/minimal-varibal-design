@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { PhoneCall, Settings, Rocket, CalendarCheck, ArrowDown } from 'lucide-react';
 
 const steps = [
   {
@@ -7,7 +8,7 @@ const steps = [
     title: 'Demo Call',
     timing: 'Today',
     description: 'Enter your number, get a call from Sophie in 30 seconds',
-    icon: 'fa-phone-volume',
+    Icon: PhoneCall,
     color: '#0066FF'
   },
   {
@@ -15,7 +16,7 @@ const steps = [
     title: 'Setup',
     timing: '24-48h',
     description: 'We configure your AI with your services, prices, availability',
-    icon: 'fa-cog',
+    Icon: Settings,
     color: '#8B5CF6'
   },
   {
@@ -23,7 +24,7 @@ const steps = [
     title: 'Go Live',
     timing: 'Day 2',
     description: 'Forward your calls to your AI number — that\'s it',
-    icon: 'fa-rocket',
+    Icon: Rocket,
     color: '#10B981'
   },
   {
@@ -31,7 +32,7 @@ const steps = [
     title: 'Get Bookings',
     timing: 'Ongoing',
     description: 'Sophie answers, books, sends confirmations. You get notified.',
-    icon: 'fa-calendar-check',
+    Icon: CalendarCheck,
     color: '#F59E0B'
   }
 ];
@@ -77,7 +78,7 @@ const HowItWorks: React.FC = () => {
                     className="w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-4"
                     style={{ backgroundColor: `${step.color}20` }}
                   >
-                    <i className={`fa-solid ${step.icon} text-2xl`} style={{ color: step.color }}></i>
+                    <step.Icon className="w-6 h-6" style={{ color: step.color }} />
                   </div>
 
                   <h3 className="text-lg font-bold mb-2">{step.title}</h3>
@@ -88,7 +89,7 @@ const HowItWorks: React.FC = () => {
               {/* Arrow (mobile) */}
               {index < steps.length - 1 && (
                 <div className="md:hidden flex justify-center my-4">
-                  <i className="fa-solid fa-arrow-down text-[#A1A1AA]"></i>
+                  <ArrowDown className="w-5 h-5 text-[#A1A1AA]" />
                 </div>
               )}
             </div>

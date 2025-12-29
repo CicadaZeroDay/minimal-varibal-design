@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Scissors, X, Check, ArrowRight } from 'lucide-react';
 
 const CaseStudy: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const CaseStudy: React.FC = () => {
           {/* Left: Story */}
           <div>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#0066FF]/20 text-[#0066FF] text-sm font-medium mb-6">
-              <i className="fa-solid fa-scissors"></i>
+              <Scissors className="w-4 h-4" />
               Hair Salon Case Study
             </div>
 
@@ -25,17 +26,17 @@ const CaseStudy: React.FC = () => {
             <div className="grid grid-cols-2 gap-4 mb-8">
               <div className="p-4 rounded-xl bg-white/5 border border-white/10">
                 <div className="text-sm font-medium text-[#A1A1AA] mb-2">BEFORE</div>
-                <ul className="space-y-2 text-sm text-[#6B7280]">
+                <ul className="space-y-2 text-sm text-[#9CA3AF]">
                   <li className="flex items-start gap-2">
-                    <i className="fa-solid fa-xmark text-[#6B7280] mt-1"></i>
+                    <X className="w-4 h-4 text-[#9CA3AF] mt-0.5 flex-shrink-0" />
                     15-20 missed calls/week
                   </li>
                   <li className="flex items-start gap-2">
-                    <i className="fa-solid fa-xmark text-[#6B7280] mt-1"></i>
+                    <X className="w-4 h-4 text-[#9CA3AF] mt-0.5 flex-shrink-0" />
                     Answering phone mid-haircut
                   </li>
                   <li className="flex items-start gap-2">
-                    <i className="fa-solid fa-xmark text-[#6B7280] mt-1"></i>
+                    <X className="w-4 h-4 text-[#9CA3AF] mt-0.5 flex-shrink-0" />
                     Lost ~£3,000/month
                   </li>
                 </ul>
@@ -45,15 +46,15 @@ const CaseStudy: React.FC = () => {
                 <div className="text-sm font-medium text-[#10B981] mb-2">AFTER 30 DAYS</div>
                 <ul className="space-y-2 text-sm text-[#A1A1AA]">
                   <li className="flex items-start gap-2">
-                    <i className="fa-solid fa-check text-[#10B981] mt-1"></i>
+                    <Check className="w-4 h-4 text-[#10B981] mt-0.5 flex-shrink-0" />
                     0 missed calls
                   </li>
                   <li className="flex items-start gap-2">
-                    <i className="fa-solid fa-check text-[#10B981] mt-1"></i>
+                    <Check className="w-4 h-4 text-[#10B981] mt-0.5 flex-shrink-0" />
                     100% focus on clients
                   </li>
                   <li className="flex items-start gap-2">
-                    <i className="fa-solid fa-check text-[#10B981] mt-1"></i>
+                    <Check className="w-4 h-4 text-[#10B981] mt-0.5 flex-shrink-0" />
                     +47% bookings
                   </li>
                 </ul>
@@ -87,8 +88,8 @@ const CaseStudy: React.FC = () => {
                   <span className="text-sm text-[#10B981]">-100%</span>
                 </div>
                 <div className="flex items-baseline gap-4">
-                  <span className="text-4xl font-bold text-[#6B7280] line-through opacity-50">23/week</span>
-                  <i className="fa-solid fa-arrow-right text-[#A1A1AA]"></i>
+                  <span className="text-4xl font-bold text-[#9CA3AF] line-through opacity-50">23/week</span>
+                  <ArrowRight className="w-5 h-5 text-[#A1A1AA]" />
                   <span className="text-4xl font-bold text-[#10B981]">0/week</span>
                 </div>
               </div>

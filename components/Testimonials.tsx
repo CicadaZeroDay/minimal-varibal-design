@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Star } from 'lucide-react';
 
 const testimonials = [
   {
@@ -50,7 +51,7 @@ const Testimonials: React.FC = () => {
               {/* Stars */}
               <div className="flex gap-1 text-yellow-400 mb-4">
                 {[1, 2, 3, 4, 5].map(i => (
-                  <i key={i} className="fa-solid fa-star text-sm"></i>
+                  <Star key={i} className="w-4 h-4 fill-current" />
                 ))}
               </div>
 
