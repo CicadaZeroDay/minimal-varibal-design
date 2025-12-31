@@ -122,7 +122,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-3 text-[#A1A1AA]">
               <li className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-[#0066FF]" />
-                hello@nomissedcalls.uk
+                sales@nomissedcalls.uk
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-[#0066FF]" />
