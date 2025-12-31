@@ -6,11 +6,16 @@ export const legacyArticles: Article[] = [
     title: "How Sarah's Beauty Salon Stopped Losing £4,200/Month to Competitors",
     description: "A London salon owner was watching clients book with rivals while she was busy with appointments. Here's how she turned it around in 30 days.",
     content: `
+      <figure>
+        <img src="/blog/illustrations/beauty-problem.svg" alt="Beauty salon missing calls - stylist busy with client while phone rings unanswered" loading="lazy" width="800" height="450" />
+        <figcaption>Every missed call meant another client booking with competitors</figcaption>
+      </figure>
+
       <h2>The Nightmare: Watching Clients Walk Away</h2>
       <p>Sarah Chen had built her beauty salon in Notting Hill over 8 years. Starting with just one chair and a dream, she had grown "Glow & Grace" into a thriving three-chair salon with loyal clients, over 200 five-star Google reviews, and a reputation for the best balayage in West London. Celebrity stylists sent their overflow clients to her. Local magazines featured her work regularly.</p>
       <p>But something was slowly killing her business, and Sarah didn't even realise it at first.</p>
       <p><strong>"I'd finish with a client, check my phone, and see 4-5 missed calls,"</strong> Sarah recalls, sitting in her salon on a quiet Tuesday morning. <strong>"When I'd call back an hour later, half of them had already booked elsewhere. The other half didn't pick up at all."</strong></p>
-      <p>The maths was brutal. Sarah was missing an average of 12-15 calls every single day. With her average service value at £85 and a 60% conversion rate for phone enquiries, she was bleeding money without realising it.</p>
+      <p>The maths was brutal. Sarah was missing an average of 12-15 calls every single day. With her average service value at £85 and a 60% conversion rate for phone enquiries, she was bleeding money without realising it. <a href="/blog/missed-calls-cost-uk-business" class="text-[#0066FF] hover:underline">Research shows UK businesses lose billions annually to missed calls</a> — and salons are particularly vulnerable.</p>
 
       <h2>The Breaking Point: Losing a £600 Wedding Party</h2>
       <p>The moment Sarah knew she had to change came on a Saturday in June. She had just finished a complex colour correction — nearly four hours of intense focus. When she finally checked her phone, she found eight missed calls, three voicemails, and a text message that made her stomach drop.</p>
@@ -23,8 +28,13 @@ export const legacyArticles: Article[] = [
       <p>"My older clients, the ones who spend £200-300 per visit, they want to talk to someone," Sarah explains. "They have questions. They want recommendations. You can't get that from a booking form."</p>
       <p>The fundamental problem was impossible to solve with traditional methods: Sarah couldn't simultaneously be giving a client her full attention AND answering the phone. Neither could her two stylists. And hiring a full-time receptionist would cost more than the revenue she was losing.</p>
 
+      <figure>
+        <img src="/blog/illustrations/beauty-solution.svg" alt="AI receptionist Sophie answering calls for beauty salon 24/7" loading="lazy" width="800" height="450" />
+        <figcaption>Sophie AI handles every call while stylists focus on clients</figcaption>
+      </figure>
+
       <h2>Discovering No Missed Calls</h2>
-      <p>Sarah first heard about AI receptionists from another salon owner at an industry event in September 2024. "She told me about this service that answers calls with a voice that sounds completely human, knows your business, and can book appointments directly into your calendar. I was sceptical."</p>
+      <p>Sarah first heard about AI receptionists from another salon owner at an industry event in September 2024. "She told me about this service that answers calls with a voice that sounds completely human, knows your business, and can book appointments directly into your calendar. I was sceptical." (If you're also sceptical, read our <a href="/blog/ai-receptionist-vs-human-receptionist" class="text-[#0066FF] hover:underline">detailed comparison of AI vs human receptionists</a>.)</p>
       <p>What convinced Sarah to try No Missed Calls was the risk-free guarantee: 40% increase in bookings within 30 days, or a full refund. "I thought, 'what do I have to lose?' Either it works and I make more money, or it doesn't and I get my money back."</p>
 
       <h2>The Setup: Surprisingly Simple</h2>
@@ -71,6 +81,12 @@ export const legacyArticles: Article[] = [
         <li>Average booking value: £120</li>
       </ul>
       <p><strong>The difference: 35 additional bookings, £4,200 extra revenue.</strong></p>
+
+      <figure>
+        <img src="/blog/illustrations/beauty-results.svg" alt="Beauty salon booking growth chart showing 51% increase with AI receptionist" loading="lazy" width="800" height="450" />
+        <figcaption>Monthly bookings jumped from 68 to 103 — a 51% increase</figcaption>
+      </figure>
+
       <p>With No Missed Calls costing £399 per month, Sarah's return on investment was a staggering 10.5x. For every pound she spent, she got more than ten pounds back.</p>
 
       <h2>The Unexpected Benefits</h2>
@@ -116,7 +132,7 @@ export const legacyArticles: Article[] = [
         <li><strong>Missed calls are invisible revenue loss.</strong> Most salon owners dramatically underestimate how many calls they miss and how much money that represents.</li>
         <li><strong>After-hours calls are pure opportunity.</strong> People don't stop wanting appointments at 6pm. Being available 24/7 captures bookings competitors miss.</li>
         <li><strong>AI receptionists sound natural.</strong> Modern AI voices are indistinguishable from humans. Clients don't notice or don't care.</li>
-        <li><strong>The ROI is extraordinary.</strong> Sarah's 10.5x return is typical for salons. Some see even higher returns.</li>
+        <li><strong>The ROI is extraordinary.</strong> Sarah's 10.5x return is typical for salons. Some see even higher returns. Beauty salons are among the <a href="/blog/best-industries-for-ai-receptionists" class="text-[#0066FF] hover:underline">top industries that benefit from AI receptionists</a>.</li>
         <li><strong>Implementation is simple.</strong> Two hours of setup, then it works automatically. No technical knowledge required.</li>
       </ul>
 
@@ -138,6 +154,11 @@ export const legacyArticles: Article[] = [
     title: 'Oakwood Dental Was Missing Emergency Calls — Then Revenue Jumped 34%',
     description: 'A Manchester dental practice was losing high-value emergency patients to competitors. One change brought in £18,000 extra per month.',
     content: `
+      <figure>
+        <img src="/blog/illustrations/dental-emergency.svg" alt="Emergency dental call at night - patient in pain while phone goes to voicemail" loading="lazy" width="800" height="450" />
+        <figcaption>Dental emergencies don't wait for office hours</figcaption>
+      </figure>
+
       <h2>The Fear: Patients in Pain, Calling Your Competitors</h2>
       <p>Dr. James Hartley had a terrible realisation one Monday morning. A long-time patient came in for a routine check-up and casually mentioned: <strong>"I cracked my tooth last Saturday. Called you but got voicemail, so I went to that emergency dentist on Oxford Road."</strong></p>
       <p>That casual comment changed everything for Oakwood Dental, a well-established practice in Didsbury, Manchester. Dr. Hartley had built the practice over 15 years, growing from a solo operation to a three-dentist practice serving over 4,000 registered patients. But he was losing his most valuable appointments without even knowing it.</p>
@@ -160,7 +181,7 @@ export const legacyArticles: Article[] = [
       </ul>
       <p>They were losing 10 emergency appointments every weekend. At £285 average value, that represented <strong>£2,850 per weekend, or £11,400 per month</strong>, just in emergency appointments.</p>
       <p>"And that doesn't count the evening calls," Sarah pointed out. "From 5:30pm to 8:30am every weekday, we're dark. That's another 15 hours per day, five days per week, where emergencies are going elsewhere."</p>
-      <p>When they added evening calls to the equation, the estimated monthly loss exceeded £15,000.</p>
+      <p>When they added evening calls to the equation, the estimated monthly loss exceeded £15,000. (This aligns with <a href="/blog/missed-calls-cost-uk-business" class="text-[#0066FF] hover:underline">UK-wide research on the cost of missed calls</a>.)</p>
 
       <h2>Why Traditional Solutions Failed</h2>
       <p>Oakwood Dental had tried several approaches over the years:</p>
@@ -171,9 +192,14 @@ export const legacyArticles: Article[] = [
 
       <h2>Discovering No Missed Calls</h2>
       <p>Dr. Hartley first heard about AI receptionists at a dental conference in Birmingham. A colleague from Leeds mentioned he'd implemented one six months earlier and had seen a 40% increase in emergency bookings.</p>
-      <p>"I was sceptical," Dr. Hartley admits. "The idea of an AI talking to patients about dental emergencies seemed risky. What if it gave wrong advice? What if it scared patients? What if it made us look unprofessional?"</p>
+      <p>"I was sceptical," Dr. Hartley admits. "The idea of an AI talking to patients about dental emergencies seemed risky. What if it gave wrong advice? What if it scared patients? What if it made us look unprofessional?" (For a detailed breakdown, see our <a href="/blog/ai-receptionist-vs-human-receptionist" class="text-[#0066FF] hover:underline">AI vs human receptionist comparison</a>.)</p>
       <p>But the colleague's numbers were compelling. And the No Missed Calls guarantee — 40% more bookings in 30 days or your money back — eliminated the risk.</p>
       <p>"I figured, worst case, it doesn't work and we've lost nothing. Best case, we capture those 10+ emergency appointments we're losing every weekend."</p>
+
+      <figure>
+        <img src="/blog/illustrations/dental-triage.svg" alt="AI dental triage system categorizing emergency calls by urgency" loading="lazy" width="800" height="450" />
+        <figcaption>Sophie triages calls into urgent, same-day, and routine categories</figcaption>
+      </figure>
 
       <h2>Setting Up Sophie for Dental Emergencies</h2>
       <p>The implementation process was more thorough than Dr. Hartley expected. The No Missed Calls team spent three hours understanding Oakwood Dental's specific needs:</p>
@@ -231,6 +257,11 @@ export const legacyArticles: Article[] = [
       <p><strong>Return on Investment: 45x in the first month alone.</strong></p>
       <p>The £399 monthly investment was generating an average of £18,000 in additional monthly revenue.</p>
 
+      <figure>
+        <img src="/blog/illustrations/dental-results.svg" alt="Dental practice emergency appointments growth 158% with AI receptionist" loading="lazy" width="800" height="450" />
+        <figcaption>Emergency appointments jumped from 12 to 31 per month — a 158% increase</figcaption>
+      </figure>
+
       <h2>Beyond Emergencies: The Ripple Effect</h2>
       <p>While emergency appointments drove the initial ROI, Dr. Hartley noticed other improvements:</p>
       <p><strong>New Patient Registration:</strong> Many emergency patients became regular patients. "If someone comes to us at 10pm on a Saturday with a broken tooth, and we fix them up, they remember that. They register with us. They bring their families."</p>
@@ -252,7 +283,7 @@ export const legacyArticles: Article[] = [
 
       <h2>Lessons for Other Dental Practices</h2>
       <p>Based on Oakwood Dental's experience, Dr. Hartley offers advice to other practice owners:</p>
-      <p><strong>1. Emergencies are gold.</strong> "Emergency appointments are our highest-margin work. Any system that captures more emergencies pays for itself immediately. If you're letting emergency calls go to voicemail, you're literally throwing money away."</p>
+      <p><strong>1. Emergencies are gold.</strong> "Emergency appointments are our highest-margin work. Any system that captures more emergencies pays for itself immediately. If you're letting emergency calls go to voicemail, you're literally throwing money away." Dental practices are one of the <a href="/blog/best-industries-for-ai-receptionists" class="text-[#0066FF] hover:underline">top 10 industries for AI receptionists</a>.</p>
       <p><strong>2. After-hours is when you're needed most.</strong> "Dental pain doesn't stop at 5pm. Being available 24/7 isn't just about emergencies — it's about being there when patients need you. That builds loyalty that lasts for years."</p>
       <p><strong>3. AI handles triage better than expected.</strong> "I was worried about clinical risk. But Sophie follows our protocols exactly, every time. No fatigue, no distraction, no bad days. She's actually more consistent than a human receptionist would be."</p>
       <p><strong>4. The ROI is immediate.</strong> "Don't wait months to see if it's working. You'll know within a week. We saw the difference after one weekend."</p>
@@ -288,6 +319,11 @@ export const legacyArticles: Article[] = [
     title: "Mike's Auto Repair Was Losing £2,100 Weekly to Unanswered Calls",
     description: "A Birmingham mechanic couldn't answer phones while under cars. He was losing 60% of new customer calls — until he found a solution.",
     content: `
+      <figure>
+        <img src="/blog/illustrations/auto-mechanic.svg" alt="Auto mechanic unable to answer phone while working under car" loading="lazy" width="800" height="450" />
+        <figcaption>When you're elbow-deep in an engine, the phone keeps ringing</figcaption>
+      </figure>
+
       <h2>The Problem: You Can't Answer Phones From Under a Car</h2>
       <p>Mike Reynolds has been a mechanic for 22 years. He started as an apprentice at 16, worked his way up through dealership service departments, and finally opened his own garage in Solihull, Birmingham, twelve years ago. Reynolds Auto Services now operates three bays with two employees, specialising in German cars — BMWs, Mercedes, Audis, and Volkswagens.</p>
       <p>Mike knows engines inside out. What he didn't know was how much business he was losing every single day.</p>
@@ -318,7 +354,7 @@ export const legacyArticles: Article[] = [
         <li>Average job value: £380</li>
         <li>Weekly revenue lost: £7,600</li>
       </ul>
-      <p>"That number hit me like a ton of bricks," Mike admits. "I was losing more money from missed calls than I was paying my two mechanics combined. And I had no idea."</p>
+      <p>"That number hit me like a ton of bricks," Mike admits. "I was losing more money from missed calls than I was paying my two mechanics combined. And I had no idea." (<a href="/blog/missed-calls-cost-uk-business" class="text-[#0066FF] hover:underline">See the full breakdown of how missed calls cost UK businesses billions</a>.)</p>
       <p>Even being conservative — assuming only 30% of missed calls would have converted — Mike was losing at least £2,100 per week. That's over £100,000 per year in missed revenue.</p>
 
       <h2>Failed Attempts at Solving the Problem</h2>
@@ -338,7 +374,7 @@ export const legacyArticles: Article[] = [
       <h2>Discovering AI Receptionists</h2>
       <p>Mike first heard about AI receptionists from a car parts supplier. "He mentioned another garage he delivered to was using some AI phone thing. Said their bookings had gone through the roof. I thought he was having me on."</p>
       <p>Curious, Mike searched online and found No Missed Calls. The concept seemed almost too good to be true: an AI assistant that could answer calls, understand what customers needed, quote prices, and book appointments directly into his calendar — all without any human involvement.</p>
-      <p>"I was sceptical," Mike admits. "How could a computer understand someone describing a weird noise their car makes? But they had this guarantee — 40% more bookings or your money back. I figured, worst case, I'm out nothing."</p>
+      <p>"I was sceptical," Mike admits. "How could a computer understand someone describing a weird noise their car makes? But they had this guarantee — 40% more bookings or your money back. I figured, worst case, I'm out nothing." (Learn more in our <a href="/blog/ai-receptionist-vs-human-receptionist" class="text-[#0066FF] hover:underline">AI vs human receptionist comparison</a>.)</p>
 
       <h2>Setting Up Sophie for an Auto Shop</h2>
       <p>The onboarding process took about two and a half hours. The No Missed Calls team called Mike and asked detailed questions about his business:</p>
@@ -473,6 +509,11 @@ export const legacyArticles: Article[] = [
     title: 'How Much Do Missed Calls Cost UK Businesses?',
     description: 'Every missed call costs your business £47 on average. Learn how to calculate your real revenue loss and what you can do about it.',
     content: `
+      <figure>
+        <img src="/blog/illustrations/missed-stats.svg" alt="UK businesses lose 1.2 billion pounds to missed calls annually" loading="lazy" width="800" height="450" />
+        <figcaption>The staggering cost of missed calls across UK businesses</figcaption>
+      </figure>
+
       <h2>The Hidden Cost of Missed Calls</h2>
       <p>For most UK small businesses, the phone is still the primary way customers book appointments and make enquiries. Despite the rise of online booking systems, messaging apps, and social media, research consistently shows that <strong>phone calls convert to bookings at 2-3x the rate of any other contact method</strong>.</p>
       <p>Yet industry data reveals a troubling truth: <strong>62% of calls to UK small businesses go unanswered</strong>. That's nearly two out of every three potential customers hearing a voicemail message instead of a human voice.</p>
@@ -508,6 +549,7 @@ export const legacyArticles: Article[] = [
         <li>Weekly loss: £1,125-3,360</li>
         <li>Annual loss: £58,500-174,720</li>
       </ul>
+      <p><em>Real example: <a href="/blog/beauty-salon-case-study-lost-clients-to-competitors" class="text-[#0066FF] hover:underline">How a Leeds salon recovered £4,200/month</a> by answering every call.</em></p>
 
       <h3>Dental Practices</h3>
       <ul>
@@ -518,6 +560,7 @@ export const legacyArticles: Article[] = [
         <li>Weekly loss: £990-4,800</li>
         <li>Annual loss: £51,480-249,600</li>
       </ul>
+      <p><em>Real example: <a href="/blog/dental-practice-case-study-emergency-calls" class="text-[#0066FF] hover:underline">How a Manchester dental practice increased revenue 34%</a> by capturing emergency calls.</em></p>
 
       <h3>Auto Repair Garages</h3>
       <ul>
@@ -528,6 +571,7 @@ export const legacyArticles: Article[] = [
         <li>Weekly loss: £1,800-8,750</li>
         <li>Annual loss: £93,600-455,000</li>
       </ul>
+      <p><em>Real example: <a href="/blog/auto-repair-shop-case-study-missed-calls" class="text-[#0066FF] hover:underline">How a Birmingham mechanic stopped losing £2,100/week</a>.</em></p>
 
       <h3>Restaurants</h3>
       <ul>
@@ -538,6 +582,7 @@ export const legacyArticles: Article[] = [
         <li>Weekly loss: £1,800-6,720</li>
         <li>Annual loss: £93,600-349,440</li>
       </ul>
+      <p><em>Real example: <a href="/blog/restaurant-case-study-reservations-during-service" class="text-[#0066FF] hover:underline">How an Edinburgh restaurant recovered 40% of lost reservations</a>.</em></p>
 
       <h3>Trades (Plumbers, Electricians, etc.)</h3>
       <ul>
@@ -548,6 +593,7 @@ export const legacyArticles: Article[] = [
         <li>Weekly loss: £1,350-10,800</li>
         <li>Annual loss: £70,200-561,600</li>
       </ul>
+      <p><em>Real example: <a href="/blog/plumber-case-study-emergency-calls-leeds" class="text-[#0066FF] hover:underline">How a Leeds plumber doubled his income</a> by never missing emergency calls.</em></p>
 
       <h2>Calculate Your Own Lost Revenue</h2>
       <p>Every business is different. Here's how to calculate what missed calls are costing your specific operation:</p>
@@ -657,6 +703,11 @@ export const legacyArticles: Article[] = [
     title: 'AI Receptionist vs Human Receptionist: 2025 Comparison',
     description: 'Should you hire a human receptionist or use AI? We compare costs, availability, and capabilities to help you decide.',
     content: `
+      <figure>
+        <img src="/blog/illustrations/comparison-cost.svg" alt="Cost comparison AI vs human receptionist annual expenses" loading="lazy" width="800" height="450" />
+        <figcaption>Annual cost comparison: Human receptionist vs AI receptionist</figcaption>
+      </figure>
+
       <h2>The Reception Dilemma</h2>
       <p>Every growing business faces the same question: how do you handle incoming calls professionally without breaking the bank? The phone is still the primary way customers book appointments — yet answering it consistently is one of the biggest operational challenges small businesses face.</p>
       <p>Historically, the solution was simple: hire a receptionist. But in 2025, AI receptionists have matured to the point where they represent a genuine alternative. The question is no longer "does AI work?" but "which option is right for my business?"</p>
@@ -933,7 +984,7 @@ export const legacyArticles: Article[] = [
     publishedAt: '10 January 2025',
     category: 'Comparisons',
     tags: ['AI receptionist', 'hiring', 'costs', 'comparison'],
-    featuredImage: '/blog/ai-vs-human.webp',
+    featuredImage: '/blog/ai-vs-human.svg',
     readTime: '14 min read'
   },
   {
@@ -941,6 +992,11 @@ export const legacyArticles: Article[] = [
     title: 'Top 10 Industries That Benefit Most From AI Receptionists',
     description: 'Discover which UK industries see the highest ROI from AI phone answering. Is your business on the list?',
     content: `
+      <figure>
+        <img src="/blog/illustrations/industries-grid.svg" alt="Top 10 industries benefiting from AI receptionists UK" loading="lazy" width="800" height="450" />
+        <figcaption>The top 10 UK industries seeing highest ROI from AI receptionists</figcaption>
+      </figure>
+
       <h2>Which Businesses Benefit Most?</h2>
       <p>AI receptionists work best for businesses that rely heavily on phone bookings and have consistent, predictable enquiries. Not every business is equally suited to AI phone handling — some see extraordinary returns while others benefit less dramatically.</p>
       <p>Based on data from thousands of UK businesses using AI receptionists, we've identified the top 10 industries that consistently see the highest return on investment. If your business is on this list, an AI receptionist could transform your operations.</p>
@@ -1173,6 +1229,11 @@ export const legacyArticles: Article[] = [
     title: "How Bella Roma Lost 40% of Dinner Reservations — Until They Fixed One Simple Problem",
     description: "An Edinburgh Italian restaurant was missing calls during their busiest hours. The phone rang, but nobody could answer. Here's how they turned £6,000 in monthly losses into their best year ever.",
     content: `
+      <figure>
+        <img src="/blog/illustrations/restaurant-rush.svg" alt="Busy restaurant unable to answer reservation calls during peak service" loading="lazy" width="800" height="450" />
+        <figcaption>When service is in full swing, who answers the phone?</figcaption>
+      </figure>
+
       <h2>The Impossible Choice: Serve Customers or Answer the Phone</h2>
       <p>Marco Benedetti opened Bella Roma in Edinburgh's New Town fifteen years ago. What started as a tiny 30-seat trattoria had grown into one of the city's most beloved Italian restaurants, now seating 85 guests across two floors. Trip Advisor ranked them in the top 10 Italian restaurants in Scotland. Local food critics regularly praised Marco's handmade pasta and his grandmother's tiramisu recipe.</p>
       <p>But behind the scenes, Marco was fighting a battle he couldn't win.</p>
@@ -1197,7 +1258,7 @@ export const legacyArticles: Article[] = [
         <li>Estimated conversion rate of answered calls: 70%</li>
         <li>Weekly lost revenue: 75 missed calls × 70% conversion × £134 = £7,035</li>
       </ul>
-      <p><strong>"Seven thousand pounds a week,"</strong> Marco says, shaking his head. <strong>"I couldn't believe it. That's over £28,000 a month we were potentially leaving on the table. More than my rent."</strong></p>
+      <p><strong>"Seven thousand pounds a week,"</strong> Marco says, shaking his head. <strong>"I couldn't believe it. That's over £28,000 a month we were potentially leaving on the table. More than my rent."</strong> (<a href="/blog/missed-calls-cost-uk-business" class="text-[#0066FF] hover:underline">Research confirms UK businesses lose billions annually to missed calls</a>.)</p>
       <p>Even being conservative — assuming only 40% of missed calls would have booked — Bella Roma was losing at least £4,000 per week in revenue.</p>
 
       <h2>Why Restaurants Can't Just "Answer the Phone"</h2>
@@ -1389,6 +1450,11 @@ export const legacyArticles: Article[] = [
     title: "This Leeds Plumber Was Losing £800/Day to Missed Emergency Calls. Here's How He Fixed It.",
     description: "Dave couldn't answer phones while fixing burst pipes. Every missed call meant another £200+ job going to a competitor. In 60 days, he doubled his income without working more hours.",
     content: `
+      <figure>
+        <img src="/blog/illustrations/plumber-emergency.svg" alt="Emergency plumbing call - burst pipe flooding kitchen while plumber on another job" loading="lazy" width="800" height="450" />
+        <figcaption>Plumbing emergencies don't wait for convenient moments</figcaption>
+      </figure>
+
       <h2>The Tradesman's Impossible Problem</h2>
       <p>Dave Morrison has been a plumber in Leeds for 19 years. He started as an apprentice at 17, got his qualifications, worked for a big firm for a decade, then finally went solo eight years ago. Today, Morrison Plumbing & Heating serves over 400 regular customers across Leeds, Wakefield, and Bradford.</p>
       <p>Dave is brilliant at his job. He can diagnose a boiler fault by sound alone. He's fixed emergency burst pipes at 2am in freezing January weather. His customers love him — his Google reviews are filled with comments about his reliability, honesty, and quality work.</p>
@@ -1418,7 +1484,7 @@ export const legacyArticles: Article[] = [
         <li>Average job value: £215</li>
         <li>Weekly lost revenue: £5,590</li>
       </ul>
-      <p><strong>"Five and a half grand a week,"</strong> Dave says, shaking his head. <strong>"I nearly fell off my chair when I calculated it. That's more than I was actually earning. I was losing more business than I was winning."</strong></p>
+      <p><strong>"Five and a half grand a week,"</strong> Dave says, shaking his head. <strong>"I nearly fell off my chair when I calculated it. That's more than I was actually earning. I was losing more business than I was winning."</strong> (<a href="/blog/missed-calls-cost-uk-business" class="text-[#0066FF] hover:underline">The UK-wide data on missed call costs</a> backs this up.)</p>
 
       <h2>Why Tradespeople Miss So Many Calls</h2>
       <p>The trades have a unique phone problem that office-based businesses don't face. It's not about being too busy to answer — it's about being physically unable to answer.</p>
@@ -1589,6 +1655,11 @@ export const legacyArticles: Article[] = [
     title: 'How a Bristol Estate Agent Captured £127,000 in Lost Commissions',
     description: 'An independent estate agent was losing property viewings to Rightmove competitors. AI phone handling changed everything in 60 days.',
     content: `
+      <figure>
+        <img src="/blog/illustrations/estate-viewing.svg" alt="Estate agent missing buyer calls during property viewing" loading="lazy" width="800" height="450" />
+        <figcaption>When you're showing properties, hot leads are calling your voicemail</figcaption>
+      </figure>
+
       <h2>The Brutal Reality: Losing Buyers to Chain Agents</h2>
       <p>Rachel Morgan had built Parkside Properties over twelve years into one of Bristol's most respected independent estate agencies. Operating from a converted Victorian townhouse in Clifton, she'd carved out a niche in the £400,000-800,000 market — the sweet spot where independent agents could compete with the big chains on service quality.</p>
       <p>But something was wrong. Despite a strong property portfolio and excellent reviews, Rachel noticed a troubling pattern: her viewing-to-offer ratios were declining, and properties were staying on the market longer than the local average.</p>
@@ -1616,7 +1687,7 @@ export const legacyArticles: Article[] = [
       </ul>
       <p>Nearly half of all calls were either going to voicemail with no successful callback, or callers were hanging up without leaving a message at all. And these weren't cold callers or time-wasters — analysis of voicemails showed 70% were genuine buyer or vendor enquiries.</p>
       <p>Rachel did the maths. Her average property sale was £485,000, generating commission of approximately £7,275 at 1.5%. If just one in ten of those missed calls represented a lost buyer or vendor, she was losing one potential sale per week.</p>
-      <p><strong>Potential lost commission: £7,275 per week, or £378,300 per year.</strong></p>
+      <p><strong>Potential lost commission: £7,275 per week, or £378,300 per year.</strong> (<a href="/blog/missed-calls-cost-uk-business" class="text-[#0066FF] hover:underline">See our analysis of how missed calls cost UK businesses billions</a>.)</p>
       <p>Even if the actual figure was a quarter of that, she was still losing nearly £100,000 annually to unanswered phones.</p>
 
       <h2>Why Traditional Solutions Weren't Working</h2>
@@ -1758,6 +1829,11 @@ export const legacyArticles: Article[] = [
     title: 'How a Yorkshire Vet Practice Saved More Pets by Never Missing Emergency Calls',
     description: 'A busy veterinary practice was missing after-hours emergencies. AI phone handling transformed both patient outcomes and practice revenue.',
     content: `
+      <figure>
+        <img src="/blog/illustrations/vet-emergency.svg" alt="Emergency pet call at night - worried owner with sick dog" loading="lazy" width="800" height="450" />
+        <figcaption>Pet emergencies happen at the worst times — when nobody can answer</figcaption>
+      </figure>
+
       <h2>The Call That Changed Everything</h2>
       <p>Dr. Sarah Mitchell will never forget the Monday morning that changed how she ran her veterinary practice. A longtime client, Margaret Thornton, came in with her Border Collie, Max — but not for a routine appointment.</p>
       <p><strong>"I called you Saturday night,"</strong> Margaret said, tears in her eyes. <strong>"Max was having seizures. The phone just rang and rang. I didn't know what to do. I drove to the emergency vet in Leeds — 40 minutes. He almost didn't make it."</strong></p>
@@ -1799,7 +1875,7 @@ export const legacyArticles: Article[] = [
         <li>Lost client trust and potential practice transfer</li>
         <li>Lost referral potential (emergency clients often become loyal long-term clients)</li>
       </ul>
-      <p>Dr. Mitchell estimated the practice was losing £8,000-12,000 per month in missed emergency revenue alone. But more than that, she was failing the animals and families who depended on her.</p>
+      <p>Dr. Mitchell estimated the practice was losing £8,000-12,000 per month in missed emergency revenue alone. (<a href="/blog/missed-calls-cost-uk-business" class="text-[#0066FF] hover:underline">This matches the broader pattern of how missed calls cost UK businesses billions</a>.) But more than that, she was failing the animals and families who depended on her.</p>
 
       <h2>Why Traditional Solutions Fell Short</h2>
       <p>The vets had tried various approaches over the years:</p>
@@ -1945,5 +2021,226 @@ export const legacyArticles: Article[] = [
     tags: ['veterinary', 'vet practice', 'case study', 'Yorkshire', 'emergency', 'pet care'],
     featuredImage: '/blog/veterinary.svg',
     readTime: '16 min read'
+  },
+  {
+    slug: 'solicitor-case-study-missed-client-calls',
+    title: "This Birmingham Solicitor Lost £336K in New Clients. Then Sophie Started Answering His Phone.",
+    description: "Marcus Webb spent 22 hours a week in court — unreachable. Every missed call was a potential client going to competitors. Here's how he doubled his new client revenue in 90 days.",
+    content: `
+      <figure>
+        <img src="/blog/illustrations/solicitor-problem.svg" alt="Solicitor in court while urgent client calls go unanswered" loading="lazy" width="800" height="450" />
+        <figcaption>When you're in court, the phone must stay silent — but clients need help now</figcaption>
+      </figure>
+
+      <h2>The Solicitor's Impossible Choice</h2>
+      <p>Marcus Webb had a problem that was costing him a fortune, and it came down to basic physics: he couldn't be in two places at once.</p>
+      <p>As the principal solicitor at Webb Legal in Birmingham, Marcus splits his time between court appearances, client consultations, and case preparation. He's built a respected practice over 12 years, specialising in family law, personal injury, and criminal defence. His Google reviews praise his courtroom presence, his client care, and his track record.</p>
+      <p>But Marcus was bleeding clients — and money — without even realising it.</p>
+      <p><strong>"I'd come out of a three-hour court hearing, check my phone, and see 8-10 missed calls,"</strong> Marcus explains from his office in the Jewellery Quarter. <strong>"By the time I called back, half had already instructed other solicitors. The other half didn't answer. They'd moved on."</strong></p>
+      <p>In the legal profession, timing is everything. When someone's been arrested, they need a solicitor now. When someone's served divorce papers, they need advice now. When someone's had an accident, the first solicitor who answers often gets the case.</p>
+
+      <h2>The Economics of a Missed Legal Call</h2>
+      <p>Legal clients aren't casual enquiries. When someone calls a solicitor, they have a serious problem — and serious problems command serious fees. A family law case averages £3,500. A personal injury claim brings in £4,000-8,000. A criminal defence case can be £2,000-15,000 depending on complexity.</p>
+      <p>Marcus tracked his calls for one month. The numbers were devastating:</p>
+      <ul>
+        <li>Total incoming calls: 186</li>
+        <li>Calls answered: 62 (33%)</li>
+        <li>Calls missed: 124 (67%)</li>
+        <li>Voicemails left: 28 (23% of missed)</li>
+        <li>Successful callbacks: 11 (39% of voicemails)</li>
+        <li>Callbacks converted to clients: 6 (55%)</li>
+      </ul>
+      <p>Of 124 missed calls, only 6 became actual clients. The other 118 potential clients — people in crisis who needed legal help — called someone else.</p>
+      <p>With an average new client value of £3,500, Marcus was losing approximately 8 potential clients per week. That's <strong>£28,000 per week in lost new client revenue</strong> — over £1.4 million annually. <a href="/blog/missed-calls-cost-uk-business" class="text-[#0066FF] hover:underline">Research confirms UK businesses lose billions to missed calls</a>, but professional services like law firms suffer disproportionately due to high client values.</p>
+
+      <h2>Why Solicitors Miss So Many Calls</h2>
+      <p>The legal profession has unique challenges that make phone availability nearly impossible:</p>
+      <p><strong>Court appearances.</strong> Marcus spends 22 hours per week in court. Phones must be silent — it's not just rude to answer, it can result in contempt citations. During hearings, he's completely unreachable.</p>
+      <p><strong>Client consultations.</strong> When Marcus is with a client discussing their divorce or their criminal charge, he can't interrupt to take another call. That would be unprofessional and could breach confidentiality.</p>
+      <p><strong>Case preparation.</strong> Complex cases require deep focus. Reviewing evidence, preparing submissions, and legal research all demand uninterrupted concentration.</p>
+      <p><strong>Opposing counsel calls.</strong> When opposing solicitors call, Marcus needs to answer — they're often calling about case deadlines or settlement discussions. So he can't simply forward all calls.</p>
+      <p><strong>Emergency calls.</strong> Police station calls for clients under arrest come at all hours. These are time-critical — detention clocks are running. Missing one means the client might give a statement without legal advice.</p>
+
+      <h2>Traditional Solutions That Failed</h2>
+      <p>Marcus had tried multiple approaches over the years:</p>
+      <p><strong>Legal secretary:</strong> At £32,000 per year plus benefits, his secretary Emma was excellent — but she worked 9-5, Monday to Friday. Police station calls at 2am, weekend enquiries from accident victims, and emergency family matters after hours all went to voicemail. Plus, Emma couldn't give legal information or advice, limiting what she could tell callers.</p>
+      <p><strong>Junior solicitor:</strong> Marcus hired a newly qualified solicitor partly to handle phone coverage. But she was often in court too, or at client meetings. Two solicitors meant two people who couldn't answer phones, not better coverage.</p>
+      <p><strong>Answering service:</strong> A legal answering service charged £280/month. The operators could take messages but couldn't discuss case types, give any guidance, or assess urgency. A desperate caller about a child custody emergency got the same "someone will call you back" response as a routine enquiry.</p>
+      <p><strong>Website contact forms:</strong> "Someone facing criminal charges at a police station isn't going to fill out a web form. They need to speak to a human voice immediately."</p>
+
+      <h2>The Breaking Point: The Police Station Call</h2>
+      <p>The moment Marcus knew he had to change came on a Thursday evening. He'd been in court all day on a complex divorce case. Coming out at 5:30pm, he found 11 missed calls — including three from the same unknown number.</p>
+      <p>The voicemail made his stomach drop: <strong>"Mr Webb, this is Sergeant Davies at Steelhouse Lane custody suite. Your client David Morrison was arrested at 2pm and has been asking for you. We've extended detention but he'll need to be interviewed soon. Please call urgently."</strong></p>
+      <p>By the time Marcus called back, it was 6pm. David had been waiting four hours. The custody sergeant was frustrated. David had eventually accepted the duty solicitor because he couldn't wait any longer.</p>
+      <p>"David was a long-standing client," Marcus says. "Paid me a £3,000 retainer specifically for situations like this. And I wasn't there when he needed me most. He didn't blame me, but he didn't renew the retainer either. Can't say I blame him."</p>
+      <p>That night, Marcus calculated what being unreachable was truly costing him.</p>
+
+      <h2>Discovering AI Legal Reception</h2>
+      <p>Marcus first heard about AI receptionists from a colleague at a Law Society event. Another solicitor had implemented one six months earlier and was raving about it.</p>
+      <p>"I was immediately sceptical," Marcus admits. "Legal calls require sensitivity. You're dealing with people in crisis — arrests, divorces, injuries, deaths. An AI handling that seemed inappropriate, possibly even negligent."</p>
+      <p>But his colleague explained the nuances. The AI could be trained specifically for legal intake. It could identify urgency levels. It could explain practice areas and fees. It could book consultations. And critically, it could escalate genuinely urgent matters immediately. (For a detailed breakdown, see our <a href="/blog/ai-receptionist-vs-human-receptionist" class="text-[#0066FF] hover:underline">comparison of AI vs human receptionists</a>.)</p>
+      <p>The No Missed Calls guarantee removed Marcus's final objection: 40% more client enquiries in 30 days, or a full refund. "I figured I'd try it for a month. If it was inappropriate for legal work, I'd get my money back and know for certain."</p>
+
+      <figure>
+        <img src="/blog/illustrations/solicitor-solution.svg" alt="Sophie AI handling legal client intake professionally 24/7" loading="lazy" width="800" height="450" />
+        <figcaption>Sophie handles client intake while solicitors focus on legal work</figcaption>
+      </figure>
+
+      <h2>Setting Up Sophie for Legal Practice</h2>
+      <p>The setup process took about four hours — longer than most businesses because legal requirements are stricter. The No Missed Calls team worked closely with Marcus to configure Sophie appropriately:</p>
+      <p><strong>Practice area knowledge:</strong></p>
+      <ul>
+        <li>Family law: divorce, child custody, domestic abuse, prenuptial agreements</li>
+        <li>Personal injury: road accidents, workplace injuries, medical negligence</li>
+        <li>Criminal defence: police station attendance, magistrates court, Crown Court</li>
+        <li>Wills and probate: estate planning, contested wills</li>
+      </ul>
+      <p><strong>Fee guidance:</strong></p>
+      <ul>
+        <li>Initial consultation fees (fixed)</li>
+        <li>Hourly rates for ongoing work</li>
+        <li>Fixed fee services where applicable</li>
+        <li>Legal aid eligibility questions</li>
+        <li>No-win-no-fee criteria for personal injury</li>
+      </ul>
+      <p><strong>Urgency protocols:</strong></p>
+      <ul>
+        <li>Police station calls: Immediate SMS/call alert to Marcus</li>
+        <li>Domestic violence situations: Immediate escalation plus safety guidance</li>
+        <li>Child at risk concerns: Immediate escalation</li>
+        <li>Accident victims requiring evidence preservation: Same-day callback promise</li>
+        <li>Routine enquiries: Scheduled callback or consultation booking</li>
+      </ul>
+      <p><strong>Compliance configuration:</strong></p>
+      <ul>
+        <li>Clear identification as Webb Legal's AI assistant</li>
+        <li>No legal advice given — only general information and intake</li>
+        <li>GDPR-compliant data collection</li>
+        <li>Confidentiality statements</li>
+        <li>SRA regulatory requirements acknowledged</li>
+      </ul>
+      <p>"The compliance piece was crucial," Marcus notes. "Sophie doesn't give legal advice — she's very clear about that. She takes details, assesses urgency, provides general information about our services, and either books consultations or escalates to me. It's sophisticated intake, not practice."</p>
+
+      <h2>Week One: The Transformation Begins</h2>
+      <p>Sophie went live on a Monday morning. By Friday afternoon, Marcus was astonished:</p>
+      <p><strong>Week One Statistics:</strong></p>
+      <ul>
+        <li>Total calls: 47</li>
+        <li>Calls answered: 47 (100%)</li>
+        <li>New client consultations booked: 12</li>
+        <li>Police station alerts: 2 (both answered within 15 minutes)</li>
+        <li>After-hours calls: 18</li>
+        <li>Weekend calls: 9</li>
+        <li>Urgent escalations: 4</li>
+      </ul>
+      <p>"Twelve consultations booked in one week," Marcus says. "I usually got 5-6. That's double. And 18 after-hours calls — people calling at 9pm about their divorce, calling on Sunday about a Monday court appearance. I'd never have answered any of those before."</p>
+      <p>The two police station alerts were game-changers. Both came while Marcus was in court — he received SMS notifications the moment he stepped out, called the custody suites immediately, and attended within the hour. Neither client had to wait or settle for the duty solicitor.</p>
+
+      <h2>The Police Station Breakthrough</h2>
+      <p>Criminal defence work depends on police station availability. When someone is arrested, they have the right to free legal advice before interview. The first solicitor who can attend usually gets the case — and potentially years of ongoing work if charges proceed.</p>
+      <p>Before Sophie, Marcus missed approximately 60% of police station calls because they came at inconvenient times. Now, every call is answered immediately. Sophie asks key questions:</p>
+      <ul>
+        <li>Which police station?</li>
+        <li>What is the alleged offence?</li>
+        <li>How long has the client been detained?</li>
+        <li>Has the interview been scheduled?</li>
+        <li>Is there a custody time limit concern?</li>
+      </ul>
+      <p>She then immediately alerts Marcus via SMS and phone call, with all details ready. If Marcus is truly unavailable (e.g., mid-hearing), she can contact his backup criminal defence colleague.</p>
+      <p>"In the first three months, Sophie handled 23 police station calls. I attended 21 of them personally, two went to my colleague when I was in trial. Before, I'd have missed at least 14 of those. That's 14 clients who would have gone elsewhere."</p>
+      <p>At an average criminal case value of £2,800, those 14 cases represent £39,200 in potential revenue — from police station calls alone.</p>
+
+      <h2>The 90-Day Results: Transformation Complete</h2>
+      <p>After three months with No Missed Calls, Marcus compared his new client numbers:</p>
+      <p><strong>Before Sophie (July-September 2024):</strong></p>
+      <ul>
+        <li>New client enquiries per month: 24</li>
+        <li>Enquiries converted to clients: 14 (58%)</li>
+        <li>After-hours new clients: 0</li>
+        <li>Police station attendances: 8/month</li>
+        <li>Average monthly new client revenue: £49,000</li>
+      </ul>
+      <p><strong>After Sophie (October-December 2024):</strong></p>
+      <ul>
+        <li>New client enquiries per month: 40 (+67%)</li>
+        <li>Enquiries converted to clients: 28 (70%)</li>
+        <li>After-hours new clients: 15 (38% of total)</li>
+        <li>Police station attendances: 14/month (+75%)</li>
+        <li>Average monthly new client revenue: £98,000</li>
+      </ul>
+      <p><strong>Monthly revenue increase: £49,000</strong></p>
+      <p><strong>Annual additional revenue: £588,000</strong></p>
+      <p><strong>ROI: 82x (£599 investment returning ~£49,000 additional monthly revenue)</strong></p>
+
+      <figure>
+        <img src="/blog/illustrations/solicitor-results.svg" alt="Webb Legal's dramatic improvement in client acquisition after Sophie" loading="lazy" width="800" height="450" />
+        <figcaption>New client revenue doubled from £49K to £98K per month</figcaption>
+      </figure>
+
+      <h2>The Unexpected Benefits</h2>
+      <p>Beyond the headline revenue numbers, Marcus discovered several unexpected advantages:</p>
+      <p><strong>Better client qualification:</strong> Sophie asks structured intake questions that Marcus never had time for on quick phone calls. By the time a consultation is booked, Marcus knows the case type, the key facts, the urgency level, and whether the client can afford private fees or needs legal aid. Consultations are more productive.</p>
+      <p><strong>Improved conversion rates:</strong> The conversion rate jumped from 58% to 70%. "People who've had a professional intake experience, who've been asked relevant questions, who've received clear information about fees — they're more likely to instruct us. Sophie sets the professional tone before they even meet me."</p>
+      <p><strong>Reduced stress:</strong> "I used to leave court with anxiety about what I'd missed. Now I know Sophie's handled it. If something's truly urgent, I'll have been notified. If not, it's in my system waiting for follow-up. The mental load is dramatically lighter."</p>
+      <p><strong>Weekend business:</strong> 38% of new clients now come from after-hours calls. "People dealing with family crises don't stop needing help at 5pm Friday. Someone served divorce papers on Saturday morning used to wait until Monday — and probably called multiple firms. Now they reach us immediately, book a Monday consultation, and we've secured the client."</p>
+      <p><strong>Competitive advantage:</strong> "Other solicitors in Birmingham still rely on voicemail and callbacks. When potential clients call three firms and only one answers immediately with professional intake — that's us now. First response wins."</p>
+
+      <h2>What Clients Think</h2>
+      <p>Marcus was initially worried about client perception. Would people seeking legal help be put off by AI? Would it seem impersonal at a sensitive time?</p>
+      <p>He surveyed 50 clients who had first contacted the firm through Sophie:</p>
+      <ul>
+        <li>94% rated the intake experience as "excellent" or "very good"</li>
+        <li>88% said Sophie was "professional and reassuring"</li>
+        <li>Only 12% realised they were speaking with AI</li>
+        <li>96% said they would recommend Webb Legal based on the initial contact</li>
+        <li>100% said Sophie handled their enquiry appropriately</li>
+      </ul>
+      <p>"The 12% who noticed it was AI said it was 'impressively sophisticated,'" Marcus notes. "One client said it was 'better than most receptionists I've dealt with.' Nobody complained or felt it was inappropriate for legal matters."</p>
+      <p>One client — a woman calling about domestic abuse at 11pm on a Saturday — later told Marcus: "I was terrified. Calling a solicitor felt overwhelming. But the person who answered was so calm, asked the right questions, told me what I needed to do to stay safe, and promised you'd call first thing Monday. By the time we spoke, I felt supported. I didn't know it was AI, but honestly? It helped me more than most humans would have at that hour."</p>
+
+      <h2>Regulatory Compliance</h2>
+      <p>For solicitors, regulatory compliance is paramount. Marcus worked with No Missed Calls to ensure Sophie meets SRA requirements:</p>
+      <p><strong>No legal advice:</strong> Sophie is explicitly configured to never give legal advice. She provides general information about practice areas and services, takes intake details, and books consultations — but any questions requiring legal judgment are directed to qualified solicitors.</p>
+      <p><strong>Clear identification:</strong> Sophie identifies herself as Webb Legal's AI assistant at the start of every call. There's no deception about her nature.</p>
+      <p><strong>Confidentiality:</strong> All call data is encrypted and stored securely. Sophie reminds callers that their information is confidential and protected under legal professional privilege where applicable.</p>
+      <p><strong>GDPR compliance:</strong> Sophie collects only necessary information and informs callers how their data will be used, stored, and protected.</p>
+      <p><strong>Emergency protocols:</strong> For situations involving immediate risk (domestic violence, child protection, suicidal clients), Sophie follows scripted protocols that include safety guidance and immediate escalation.</p>
+      <p>"I had my compliance officer review the entire setup," Marcus says. "She was impressed. It's actually more compliant than many human reception setups because Sophie follows protocols perfectly every time."</p>
+
+      <h2>Six Months Later: Expanding the Firm</h2>
+      <p>We caught up with Marcus again in April 2025, six months after implementing No Missed Calls:</p>
+      <p><strong>Current Status:</strong></p>
+      <ul>
+        <li>New client enquiries: 52/month (up from 24)</li>
+        <li>Monthly new client revenue: £112,000 (up from £49,000)</li>
+        <li>Staff: Hired second qualified solicitor</li>
+        <li>Police station coverage: 24/7 availability</li>
+        <li>Google rating: 4.9 stars (up from 4.5)</li>
+        <li>Office expansion: Moving to larger premises</li>
+      </ul>
+      <p>"The growth has been transformational," Marcus reflects. "I've hired another solicitor, not because I needed help with the work, but because I have so much more work to do. We're moving to bigger offices next month. All from answering the phone properly."</p>
+
+      <h2>Advice for Other Solicitors</h2>
+      <p>Based on his experience, Marcus offers advice to fellow legal professionals:</p>
+      <p><strong>1. Calculate your true cost.</strong> "Track missed calls for a month. Multiply by your average new client value. The number will shock you. I was losing more than I was earning."</p>
+      <p><strong>2. Understand urgency.</strong> "Legal matters are often time-critical. Arrests, custody deadlines, limitation periods. Every hour a potential client can't reach you is an hour they might reach your competitor."</p>
+      <p><strong>3. After-hours matters.</strong> "People don't have legal problems 9-5. They get arrested at 2am. They discover affairs on weekends. They have accidents on bank holidays. Being available 24/7 isn't a luxury — it's serving clients properly."</p>
+      <p><strong>4. Professional intake helps conversion.</strong> "A structured, professional first contact sets expectations. Clients arrive at consultations better prepared, more confident in your firm, and more likely to instruct."</p>
+      <p><strong>5. Try it risk-free.</strong> "I was sceptical too. The guarantee meant I could test without risk. Within a week, I knew it was working. Within a month, I wondered how I'd ever managed without it."</p>
+      <p>Legal services are among the <a href="/blog/best-industries-for-ai-receptionists" class="text-[#0066FF] hover:underline">top industries that benefit from AI receptionists</a> due to high client values and time-sensitive matters.</p>
+
+      <h2>Is Your Practice Missing Critical Calls?</h2>
+      <p>Every solicitor faces the same impossible choice: be available for calls, or do the actual legal work. You can't cross-examine a witness while taking a new enquiry. You can't draft a contract while speaking to a distressed client. You can't be in court and at your desk simultaneously.</p>
+      <p>But your potential clients don't know — or care — about your constraints. They have a legal problem now. They need help now. If you don't answer, someone else will.</p>
+      <p>No Missed Calls offers legal practices a risk-free trial: if you don't see at least a 40% increase in new client enquiries within 30 days, you get a full refund. No contracts, no long-term commitment.</p>
+      <p><strong>Get a demo call in 30 seconds</strong> — enter your phone number above, and Sophie will call you back to demonstrate exactly how she'd handle intake for your practice.</p>
+      <p>Right now, somewhere in your area, someone needs a solicitor. They're calling law firms until someone answers. Will that someone be you?</p>
+    `,
+    author: 'NMC Team',
+    publishedAt: '30 December 2024',
+    category: 'Case Studies',
+    tags: ['solicitor', 'law firm', 'case study', 'Birmingham', 'legal', 'police station'],
+    featuredImage: '/blog/solicitor.svg',
+    readTime: '14 min read'
   }
 ];
