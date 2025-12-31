@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#111113"/>
+      <stop offset="100%" stop-color="#0A0A0B"/>
+    </radialGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066FF"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="blur1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="60"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Decorative Orbs -->
+  <circle cx="100" cy="150" r="200" fill="#0066FF" opacity="0.08" filter="url(#blur1)"/>
+  <circle cx="1100" cy="480" r="180" fill="#8B5CF6" opacity="0.06" filter="url(#blur1)"/>
+
+  <!-- Category Badge -->
+  <rect x="80" y="80" width="100" height="36" rx="18" fill="url(#accentGrad)"/>
+  <text x="130" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="white">GUIDE</text>
+
+  <!-- Icon: Moon and Clock -->
+  <g transform="translate(600, 195)">
+    <circle cx="0" cy="0" r="80" fill="url(#accentGrad)" opacity="0.15"/>
+    <!-- Moon -->
+    <path d="M-25 -25 C-10 -35 10 -30 15 -15 C20 0 15 20 0 25 C-15 30 -30 20 -35 5 C-25 15 -10 10 -5 -5 C0 -20 -10 -30 -25 -25 Z" fill="none" stroke="url(#accentGrad)" stroke-width="4"/>
+    <!-- Clock -->
+    <circle cx="25" cy="20" r="25" fill="none" stroke="url(#accentGrad)" stroke-width="3"/>
+    <line x1="25" y1="20" x2="25" y2="5" stroke="url(#accentGrad)" stroke-width="3" stroke-linecap="round"/>
+    <line x1="25" y1="20" x2="35" y2="25" stroke="url(#accentGrad)" stroke-width="3" stroke-linecap="round"/>
+    <!-- Stars -->
+    <circle cx="-40" cy="-35" r="3" fill="url(#accentGrad)" opacity="0.6"/>
+    <circle cx="-50" cy="-15" r="2" fill="url(#accentGrad)" opacity="0.4"/>
+    <circle cx="-30" cy="40" r="2" fill="url(#accentGrad)" opacity="0.4"/>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="355" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" font-weight="800" fill="white">38% of Calls Come After 6pm</text>
+  <text x="600" y="410" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" font-weight="800" fill="white">Are You <tspan fill="#EF4444">Missing Them</tspan>?</text>
+
+  <!-- Stats -->
+  <g transform="translate(600, 510)">
+    <text x="-200" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="#0066FF">38%</text>
+    <text x="-200" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#A1A1AA">After-Hours Calls</text>
+
+    <text x="0" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="#10B981">£4,200</text>
+    <text x="0" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#A1A1AA">Average Lost/Month</text>
+
+    <text x="200" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="#8B5CF6">24/7</text>
+    <text x="200" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#A1A1AA">AI Coverage</text>
+  </g>
+
+  <!-- Brand -->
+  <text x="1120" y="600" text-anchor="end" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#A1A1AA">nomissedcalls.uk</text>
+</svg>

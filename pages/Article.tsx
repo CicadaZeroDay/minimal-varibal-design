@@ -1,13 +1,48 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { articles, getArticleBySlug } from '../content/articles';
-import { ChevronRight, ArrowRight } from 'lucide-react';
+import Breadcrumb from '../components/blog/Breadcrumb';
+import { getArticleBySlug, getRelatedArticles } from '../lib/articles';
+import { Article as ArticleType } from '../content/articles/types';
+import { ArrowRight, Loader2 } from 'lucide-react';
 
 const Article: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  const article = slug ? getArticleBySlug(slug) : null;
+  const [article, setArticle] = useState<ArticleType | null>(null);
+  const [relatedArticles, setRelatedArticles] = useState<ArticleType[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [notFound, setNotFound] = useState(false);
+
+  // Load article from Supabase
+  useEffect(() => {
+    const loadArticle = async () => {
+      if (!slug) {
+        setNotFound(true);
+        setIsLoading(false);
+        return;
+      }
+
+      setIsLoading(true);
+      try {
+        const articleData = await getArticleBySlug(slug);
+        if (!articleData) {
+          setNotFound(true);
+        } else {
+          setArticle(articleData);
+          // Load related articles
+          const related = await getRelatedArticles(slug, articleData.category, 3);
+          setRelatedArticles(related);
+        }
+      } catch (error) {
+        console.error('Failed to load article:', error);
+        setNotFound(true);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    loadArticle();
+  }, [slug]);
 
   useEffect(() => {
     if (article) {
@@ -19,14 +54,21 @@ const Article: React.FC = () => {
     }
   }, [article]);
 
-  if (!article) {
+  if (notFound) {
     return <Navigate to="/blog" replace />;
   }
 
-  // Get related articles (same category, excluding current)
-  const relatedArticles = articles
-    .filter(a => a.category === article.category && a.slug !== article.slug)
-    .slice(0, 3);
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-[#0A0A0B] flex items-center justify-center">
+        <Loader2 className="w-10 h-10 text-[#0066FF] animate-spin" />
+      </div>
+    );
+  }
+
+  if (!article) {
+    return <Navigate to="/blog" replace />;
+  }
 
   return (
     <div className="min-h-screen bg-[#0A0A0B] flex flex-col overflow-x-hidden">
@@ -41,17 +83,8 @@ const Article: React.FC = () => {
       <main className="relative z-10 flex-1">
         <article className="pt-32 pb-16">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Breadcrumbs */}
-            <nav className="flex items-center gap-2 text-sm text-[#A1A1AA] mb-8">
-              <Link to="/" className="hover:text-white transition-colors">Home</Link>
-              <ChevronRight className="w-3 h-3" />
-              <Link to="/blog" className="hover:text-white transition-colors">Blog</Link>
-              <ChevronRight className="w-3 h-3" />
-              <span className="text-white truncate max-w-[200px]">{article.title}</span>
-            </nav>
-
             {/* Article Header */}
-            <header className="mb-12">
+            <header className="mb-8">
               <div className="flex items-center gap-3 mb-4">
                 <span className="px-3 py-1 rounded-full bg-[#0066FF]/10 text-[#0066FF] text-sm font-medium">
                   {article.category}
@@ -77,6 +110,18 @@ const Article: React.FC = () => {
                 </div>
               </div>
             </header>
+
+            {/* Breadcrumbs - under the title */}
+            <div className="w-full mb-8">
+              <Breadcrumb
+                items={[
+                  { label: 'Home', href: '/' },
+                  { label: 'Blog', href: '/blog' },
+                  { label: article.category, href: `/blog?category=${encodeURIComponent(article.category)}` },
+                  { label: article.title }
+                ]}
+              />
+            </div>
 
             {/* Article Content */}
             <div className="article-content mb-16 text-[#E4E4E7] leading-relaxed">

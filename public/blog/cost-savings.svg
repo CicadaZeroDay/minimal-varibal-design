@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#111113"/>
+      <stop offset="100%" stop-color="#0A0A0B"/>
+    </radialGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066FF"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="blur1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="60"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Decorative Orbs -->
+  <circle cx="100" cy="150" r="200" fill="#0066FF" opacity="0.08" filter="url(#blur1)"/>
+  <circle cx="1100" cy="480" r="180" fill="#8B5CF6" opacity="0.06" filter="url(#blur1)"/>
+
+  <!-- Category Badge -->
+  <rect x="80" y="80" width="140" height="36" rx="18" fill="url(#accentGrad)"/>
+  <text x="150" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="white">COMPARISON</text>
+
+  <!-- Icon: Piggy Bank -->
+  <g transform="translate(600, 195)">
+    <circle cx="0" cy="0" r="80" fill="url(#accentGrad)" opacity="0.15"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="5" rx="40" ry="30" fill="none" stroke="url(#accentGrad)" stroke-width="4"/>
+    <!-- Ears -->
+    <ellipse cx="-25" cy="-20" rx="10" ry="12" fill="none" stroke="url(#accentGrad)" stroke-width="3"/>
+    <!-- Snout -->
+    <ellipse cx="35" cy="5" rx="12" ry="10" fill="none" stroke="url(#accentGrad)" stroke-width="3"/>
+    <circle cx="38" cy="2" r="2" fill="url(#accentGrad)"/>
+    <circle cx="38" cy="8" r="2" fill="url(#accentGrad)"/>
+    <!-- Legs -->
+    <line x1="-20" y1="30" x2="-20" y2="45" stroke="url(#accentGrad)" stroke-width="4" stroke-linecap="round"/>
+    <line x1="0" y1="32" x2="0" y2="45" stroke="url(#accentGrad)" stroke-width="4" stroke-linecap="round"/>
+    <!-- Coin slot -->
+    <line x1="-10" y1="-25" x2="10" y2="-25" stroke="url(#accentGrad)" stroke-width="4" stroke-linecap="round"/>
+    <!-- Coin -->
+    <circle cx="15" cy="-40" r="10" fill="none" stroke="url(#accentGrad)" stroke-width="3"/>
+    <text x="15" y="-36" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="url(#accentGrad)">£</text>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="355" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" font-weight="800" fill="white">Save <tspan fill="#10B981">£24,000/Year</tspan></text>
+  <text x="600" y="410" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" font-weight="800" fill="white">vs Traditional Reception</text>
+
+  <!-- Stats -->
+  <g transform="translate(600, 510)">
+    <text x="-200" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="#EF4444">£28,000</text>
+    <text x="-200" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#A1A1AA">Human Receptionist</text>
+
+    <text x="0" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="#10B981">£3,900</text>
+    <text x="0" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#A1A1AA">AI Receptionist</text>
+
+    <text x="200" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="#8B5CF6">86%</text>
+    <text x="200" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#A1A1AA">Cost Savings</text>
+  </g>
+
+  <!-- Brand -->
+  <text x="1120" y="600" text-anchor="end" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#A1A1AA">nomissedcalls.uk</text>
+</svg>

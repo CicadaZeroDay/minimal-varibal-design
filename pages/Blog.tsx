@@ -1,12 +1,56 @@
 import React, { useEffect, useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import BlogCard from '../components/blog/BlogCard';
-import { articles } from '../content/articles';
-import { FileText } from 'lucide-react';
+import Breadcrumb from '../components/blog/Breadcrumb';
+import { getArticles, getCategories } from '../lib/articles';
+import { Article } from '../content/articles/types';
+import { FileText, Loader2 } from 'lucide-react';
 
 const Blog: React.FC = () => {
-  const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const categoryFromUrl = searchParams.get('category') || 'All';
+  const [selectedCategory, setSelectedCategory] = useState<string>(categoryFromUrl);
+  const [articles, setArticles] = useState<Article[]>([]);
+  const [categories, setCategories] = useState<string[]>(['All']);
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Load articles from Supabase
+  useEffect(() => {
+    const loadArticles = async () => {
+      setIsLoading(true);
+      try {
+        const [articlesData, categoriesData] = await Promise.all([
+          getArticles(),
+          getCategories()
+        ]);
+        setArticles(articlesData);
+        setCategories(['All', ...categoriesData]);
+      } catch (error) {
+        console.error('Failed to load articles:', error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    loadArticles();
+  }, []);
+
+  // Sync with URL changes
+  useEffect(() => {
+    const category = searchParams.get('category') || 'All';
+    setSelectedCategory(category);
+  }, [searchParams]);
+
+  // Handle category selection
+  const handleCategoryChange = (category: string) => {
+    setSelectedCategory(category);
+    if (category === 'All') {
+      setSearchParams({});
+    } else {
+      setSearchParams({ category });
+    }
+  };
 
   useEffect(() => {
     document.title = 'Blog | No Missed Calls - AI Receptionist Insights';
@@ -15,9 +59,6 @@ const Blog: React.FC = () => {
       metaDescription.setAttribute('content', 'Expert insights on AI receptionists, missed calls recovery, and growing your UK business.');
     }
   }, []);
-
-  // Get unique categories
-  const categories = ['All', ...Array.from(new Set(articles.map(a => a.category)))];
 
   // Filter articles by category
   const filteredArticles = selectedCategory === 'All'
@@ -38,7 +79,7 @@ const Blog: React.FC = () => {
         {/* Hero Section */}
         <section className="pt-32 pb-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
                 No Missed Calls <span className="gradient-text">Blog</span>
               </h1>
@@ -47,12 +88,22 @@ const Blog: React.FC = () => {
               </p>
             </div>
 
+            {/* Breadcrumbs */}
+            <div className="flex justify-center mb-8">
+              <Breadcrumb
+                items={[
+                  { label: 'Home', href: '/' },
+                  { label: 'Blog' }
+                ]}
+              />
+            </div>
+
             {/* Category Filter */}
             <div className="flex flex-wrap items-center justify-center gap-3 mb-12">
               {categories.map(category => (
                 <button
                   key={category}
-                  onClick={() => setSelectedCategory(category)}
+                  onClick={() => handleCategoryChange(category)}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-all focus:outline-none focus:ring-2 focus:ring-[#0066FF] focus:ring-offset-2 focus:ring-offset-[#0A0A0B] ${
                     selectedCategory === category
                       ? 'bg-[#0066FF] text-white shadow-lg shadow-[#0066FF]/30'
@@ -71,7 +122,11 @@ const Blog: React.FC = () => {
         {/* Articles Section */}
         <section className="pb-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            {filteredArticles.length > 0 ? (
+            {isLoading ? (
+              <div className="flex items-center justify-center py-20">
+                <Loader2 className="w-10 h-10 text-[#0066FF] animate-spin" />
+              </div>
+            ) : filteredArticles.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {filteredArticles.map((article) => (
                   <BlogCard key={article.slug} article={article} />
@@ -82,14 +137,6 @@ const Blog: React.FC = () => {
                 <FileText className="w-16 h-16 text-[#A1A1AA]/30 mx-auto mb-6" />
                 <h2 className="text-2xl font-bold mb-2">No articles found</h2>
                 <p className="text-[#A1A1AA]">Try selecting a different category.</p>
-              </div>
-            )}
-
-            {articles.length === 0 && (
-              <div className="text-center py-20">
-                <FileText className="w-16 h-16 text-[#A1A1AA]/30 mx-auto mb-6" />
-                <h2 className="text-2xl font-bold mb-2">Coming Soon</h2>
-                <p className="text-[#A1A1AA]">We're working on exciting content for you. Check back soon!</p>
               </div>
             )}
           </div>

@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0A0B"/>
+      <stop offset="100%" style="stop-color:#111113"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="400" y="40" fill="white" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle">Top 10 Industries for AI Receptionists</text>
+
+  <!-- Industry grid 5x2 -->
+  <!-- Row 1 -->
+  <g transform="translate(60, 70)">
+    <rect x="0" y="0" width="120" height="100" rx="12" fill="#111113" stroke="#10B981" stroke-width="2"/>
+    <text x="60" y="45" fill="white" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">🏥</text>
+    <text x="60" y="70" fill="white" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Medical</text>
+    <text x="60" y="85" fill="#10B981" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">#1 ROI</text>
+  </g>
+
+  <g transform="translate(200, 70)">
+    <rect x="0" y="0" width="120" height="100" rx="12" fill="#111113" stroke="#0066FF" stroke-width="2"/>
+    <text x="60" y="45" fill="white" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">🦷</text>
+    <text x="60" y="70" fill="white" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Dental</text>
+    <text x="60" y="85" fill="#0066FF" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">#2 ROI</text>
+  </g>
+
+  <g transform="translate(340, 70)">
+    <rect x="0" y="0" width="120" height="100" rx="12" fill="#111113" stroke="#8B5CF6" stroke-width="2"/>
+    <text x="60" y="45" fill="white" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">⚖️</text>
+    <text x="60" y="70" fill="white" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Legal</text>
+    <text x="60" y="85" fill="#8B5CF6" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">#3 ROI</text>
+  </g>
+
+  <g transform="translate(480, 70)">
+    <rect x="0" y="0" width="120" height="100" rx="12" fill="#111113" stroke="#F59E0B" stroke-width="2"/>
+    <text x="60" y="45" fill="white" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">🏠</text>
+    <text x="60" y="70" fill="white" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Estate Agents</text>
+    <text x="60" y="85" fill="#F59E0B" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">#4 ROI</text>
+  </g>
+
+  <g transform="translate(620, 70)">
+    <rect x="0" y="0" width="120" height="100" rx="12" fill="#111113" stroke="#EF4444" stroke-width="2"/>
+    <text x="60" y="45" fill="white" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">🔧</text>
+    <text x="60" y="70" fill="white" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Tradespeople</text>
+    <text x="60" y="85" fill="#EF4444" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">#5 ROI</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(60, 190)">
+    <rect x="0" y="0" width="120" height="100" rx="12" fill="#111113" stroke="#10B981" stroke-width="1"/>
+    <text x="60" y="45" fill="white" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">💇</text>
+    <text x="60" y="70" fill="white" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Beauty/Hair</text>
+    <text x="60" y="85" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">#6 ROI</text>
+  </g>
+
+  <g transform="translate(200, 190)">
+    <rect x="0" y="0" width="120" height="100" rx="12" fill="#111113" stroke="#0066FF" stroke-width="1"/>
+    <text x="60" y="45" fill="white" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">🐕</text>
+    <text x="60" y="70" fill="white" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Veterinary</text>
+    <text x="60" y="85" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">#7 ROI</text>
+  </g>
+
+  <g transform="translate(340, 190)">
+    <rect x="0" y="0" width="120" height="100" rx="12" fill="#111113" stroke="#8B5CF6" stroke-width="1"/>
+    <text x="60" y="45" fill="white" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">🍽️</text>
+    <text x="60" y="70" fill="white" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Restaurants</text>
+    <text x="60" y="85" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">#8 ROI</text>
+  </g>
+
+  <g transform="translate(480, 190)">
+    <rect x="0" y="0" width="120" height="100" rx="12" fill="#111113" stroke="#F59E0B" stroke-width="1"/>
+    <text x="60" y="45" fill="white" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">🚗</text>
+    <text x="60" y="70" fill="white" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Auto Services</text>
+    <text x="60" y="85" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">#9 ROI</text>
+  </g>
+
+  <g transform="translate(620, 190)">
+    <rect x="0" y="0" width="120" height="100" rx="12" fill="#111113" stroke="#EF4444" stroke-width="1"/>
+    <text x="60" y="45" fill="white" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">🏋️</text>
+    <text x="60" y="70" fill="white" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Fitness</text>
+    <text x="60" y="85" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">#10 ROI</text>
+  </g>
+
+  <!-- Common traits -->
+  <g transform="translate(60, 320)">
+    <rect x="0" y="0" width="680" height="110" rx="12" fill="#111113" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="340" y="30" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">What These Industries Have in Common</text>
+
+    <g transform="translate(30, 50)">
+      <circle cx="8" cy="8" r="8" fill="#10B981" opacity="0.3"/>
+      <text x="8" y="12" fill="#10B981" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">✓</text>
+      <text x="25" y="12" fill="#D4D4D8" font-family="Arial, sans-serif" font-size="11">High call volumes</text>
+    </g>
+
+    <g transform="translate(200, 50)">
+      <circle cx="8" cy="8" r="8" fill="#10B981" opacity="0.3"/>
+      <text x="8" y="12" fill="#10B981" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">✓</text>
+      <text x="25" y="12" fill="#D4D4D8" font-family="Arial, sans-serif" font-size="11">Appointment-based</text>
+    </g>
+
+    <g transform="translate(380, 50)">
+      <circle cx="8" cy="8" r="8" fill="#10B981" opacity="0.3"/>
+      <text x="8" y="12" fill="#10B981" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">✓</text>
+      <text x="25" y="12" fill="#D4D4D8" font-family="Arial, sans-serif" font-size="11">After-hours demand</text>
+    </g>
+
+    <g transform="translate(550, 50)">
+      <circle cx="8" cy="8" r="8" fill="#10B981" opacity="0.3"/>
+      <text x="8" y="12" fill="#10B981" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">✓</text>
+      <text x="25" y="12" fill="#D4D4D8" font-family="Arial, sans-serif" font-size="11">Staff often busy</text>
+    </g>
+
+    <g transform="translate(30, 80)">
+      <circle cx="8" cy="8" r="8" fill="#10B981" opacity="0.3"/>
+      <text x="8" y="12" fill="#10B981" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">✓</text>
+      <text x="25" y="12" fill="#D4D4D8" font-family="Arial, sans-serif" font-size="11">Emergency calls</text>
+    </g>
+
+    <g transform="translate(200, 80)">
+      <circle cx="8" cy="8" r="8" fill="#10B981" opacity="0.3"/>
+      <text x="8" y="12" fill="#10B981" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">✓</text>
+      <text x="25" y="12" fill="#D4D4D8" font-family="Arial, sans-serif" font-size="11">Price-sensitive leads</text>
+    </g>
+
+    <g transform="translate(380, 80)">
+      <circle cx="8" cy="8" r="8" fill="#10B981" opacity="0.3"/>
+      <text x="8" y="12" fill="#10B981" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">✓</text>
+      <text x="25" y="12" fill="#D4D4D8" font-family="Arial, sans-serif" font-size="11">High customer LTV</text>
+    </g>
+
+    <g transform="translate(550, 80)">
+      <circle cx="8" cy="8" r="8" fill="#10B981" opacity="0.3"/>
+      <text x="8" y="12" fill="#10B981" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">✓</text>
+      <text x="25" y="12" fill="#D4D4D8" font-family="Arial, sans-serif" font-size="11">Local competition</text>
+    </g>
+  </g>
+</svg>

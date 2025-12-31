@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0A0B"/>
+      <stop offset="100%" style="stop-color:#111113"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0066FF"/>
+      <stop offset="100%" style="stop-color:#8B5CF6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Decorative circles -->
+  <circle cx="650" cy="100" r="120" fill="#0066FF" opacity="0.1"/>
+  <circle cx="150" cy="350" r="80" fill="#8B5CF6" opacity="0.1"/>
+
+  <!-- Sophie AI (center) -->
+  <g transform="translate(320, 80)">
+    <!-- AI avatar circle -->
+    <circle cx="80" cy="80" r="70" fill="#111113" stroke="url(#accent)" stroke-width="3"/>
+    <!-- Robot face -->
+    <circle cx="60" cy="70" r="10" fill="#0066FF"/>
+    <circle cx="100" cy="70" r="10" fill="#0066FF"/>
+    <path d="M55 100 Q80 120 105 100" stroke="#0066FF" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <!-- Antenna -->
+    <line x1="80" y1="10" x2="80" y2="30" stroke="#8B5CF6" stroke-width="3"/>
+    <circle cx="80" cy="8" r="6" fill="#8B5CF6"/>
+    <!-- "Sophie" label -->
+    <text x="80" y="180" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle">Sophie</text>
+    <text x="80" y="200" fill="#0066FF" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">AI Receptionist</text>
+  </g>
+
+  <!-- Sound waves from Sophie -->
+  <g transform="translate(440, 140)">
+    <path d="M0 0 Q20 -10 20 0 Q20 10 0 0" stroke="#0066FF" stroke-width="2" fill="none" opacity="0.8"/>
+    <path d="M25 0 Q50 -15 50 0 Q50 15 25 0" stroke="#0066FF" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M55 0 Q85 -20 85 0 Q85 20 55 0" stroke="#0066FF" stroke-width="2" fill="none" opacity="0.4"/>
+  </g>
+
+  <!-- Incoming call (left) -->
+  <g transform="translate(80, 120)">
+    <rect x="0" y="0" width="100" height="120" rx="12" fill="#111113" stroke="#10B981" stroke-width="2"/>
+    <text x="50" y="30" fill="#10B981" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">Incoming</text>
+    <circle cx="50" cy="65" r="25" fill="#10B981" opacity="0.2"/>
+    <text x="50" y="72" fill="#10B981" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">📞</text>
+    <text x="50" y="105" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">New Client</text>
+  </g>
+
+  <!-- Arrow to Sophie -->
+  <path d="M190 180 L300 160" stroke="#10B981" stroke-width="2" stroke-dasharray="5,5" fill="none" marker-end="url(#arrowGreen)"/>
+
+  <!-- Booked appointment (right) -->
+  <g transform="translate(550, 100)">
+    <rect x="0" y="0" width="180" height="160" rx="12" fill="#111113" stroke="#10B981" stroke-width="2"/>
+    <text x="90" y="30" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">Appointment Booked</text>
+
+    <!-- Calendar icon -->
+    <rect x="30" y="50" width="120" height="90" rx="8" fill="#1a1a1a"/>
+    <rect x="30" y="50" width="120" height="25" rx="8" fill="#0066FF"/>
+    <text x="90" y="68" fill="white" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Friday 2:30 PM</text>
+
+    <!-- Checkmark -->
+    <circle cx="90" cy="110" r="20" fill="#10B981" opacity="0.2"/>
+    <path d="M78 110 L86 118 L102 102" stroke="#10B981" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Arrow from Sophie to booking -->
+  <path d="M480 160 L540 150" stroke="#0066FF" stroke-width="2" stroke-dasharray="5,5" fill="none"/>
+
+  <!-- Features list -->
+  <g transform="translate(80, 300)">
+    <g transform="translate(0, 0)">
+      <circle cx="10" cy="10" r="10" fill="#10B981" opacity="0.2"/>
+      <text x="10" y="14" fill="#10B981" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">✓</text>
+      <text x="30" y="14" fill="#D4D4D8" font-family="Arial, sans-serif" font-size="13">Answers in 3 seconds</text>
+    </g>
+    <g transform="translate(0, 35)">
+      <circle cx="10" cy="10" r="10" fill="#10B981" opacity="0.2"/>
+      <text x="10" y="14" fill="#10B981" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">✓</text>
+      <text x="30" y="14" fill="#D4D4D8" font-family="Arial, sans-serif" font-size="13">24/7 availability</text>
+    </g>
+    <g transform="translate(0, 70)">
+      <circle cx="10" cy="10" r="10" fill="#10B981" opacity="0.2"/>
+      <text x="10" y="14" fill="#10B981" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">✓</text>
+      <text x="30" y="14" fill="#D4D4D8" font-family="Arial, sans-serif" font-size="13">Books directly to calendar</text>
+    </g>
+  </g>
+
+  <g transform="translate(300, 300)">
+    <g transform="translate(0, 0)">
+      <circle cx="10" cy="10" r="10" fill="#10B981" opacity="0.2"/>
+      <text x="10" y="14" fill="#10B981" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">✓</text>
+      <text x="30" y="14" fill="#D4D4D8" font-family="Arial, sans-serif" font-size="13">Knows all services &amp; prices</text>
+    </g>
+    <g transform="translate(0, 35)">
+      <circle cx="10" cy="10" r="10" fill="#10B981" opacity="0.2"/>
+      <text x="10" y="14" fill="#10B981" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">✓</text>
+      <text x="30" y="14" fill="#D4D4D8" font-family="Arial, sans-serif" font-size="13">Sends SMS confirmations</text>
+    </g>
+    <g transform="translate(0, 70)">
+      <circle cx="10" cy="10" r="10" fill="#10B981" opacity="0.2"/>
+      <text x="10" y="14" fill="#10B981" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">✓</text>
+      <text x="30" y="14" fill="#D4D4D8" font-family="Arial, sans-serif" font-size="13">Natural British voice</text>
+    </g>
+  </g>
+
+  <g transform="translate(540, 300)">
+    <g transform="translate(0, 0)">
+      <circle cx="10" cy="10" r="10" fill="#10B981" opacity="0.2"/>
+      <text x="10" y="14" fill="#10B981" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">✓</text>
+      <text x="30" y="14" fill="#D4D4D8" font-family="Arial, sans-serif" font-size="13">Handles rescheduling</text>
+    </g>
+    <g transform="translate(0, 35)">
+      <circle cx="10" cy="10" r="10" fill="#10B981" opacity="0.2"/>
+      <text x="10" y="14" fill="#10B981" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">✓</text>
+      <text x="30" y="14" fill="#D4D4D8" font-family="Arial, sans-serif" font-size="13">Takes messages</text>
+    </g>
+    <g transform="translate(0, 70)">
+      <circle cx="10" cy="10" r="10" fill="#10B981" opacity="0.2"/>
+      <text x="10" y="14" fill="#10B981" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">✓</text>
+      <text x="30" y="14" fill="#D4D4D8" font-family="Arial, sans-serif" font-size="13">Real-time notifications</text>
+    </g>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="45" fill="white" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle">The Solution: Sophie Answers Every Call</text>
+</svg>

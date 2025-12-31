@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0A0B"/>
+      <stop offset="100%" style="stop-color:#111113"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="400" y="45" fill="white" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle">Coverage Hours Comparison</text>
+
+  <!-- Human hours visualization -->
+  <g transform="translate(80, 80)">
+    <rect x="0" y="0" width="280" height="260" rx="16" fill="#111113" stroke="#EF4444" stroke-width="2"/>
+
+    <text x="140" y="35" fill="#EF4444" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Human Receptionist</text>
+
+    <!-- Clock showing 9-5 -->
+    <g transform="translate(90, 50)">
+      <circle cx="50" cy="50" r="45" fill="#1a1a1a" stroke="#EF4444" stroke-width="2"/>
+      <!-- Working hours arc (9am-5pm) -->
+      <path d="M50 10 A40 40 0 0 1 90 50" stroke="#EF4444" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <path d="M90 50 A40 40 0 0 1 50 90" stroke="#EF4444" stroke-width="8" fill="none" stroke-linecap="round"/>
+      <!-- Non-working hours -->
+      <path d="M50 90 A40 40 0 0 1 10 50" stroke="#333" stroke-width="8" fill="none" opacity="0.3"/>
+      <path d="M10 50 A40 40 0 0 1 50 10" stroke="#333" stroke-width="8" fill="none" opacity="0.3"/>
+      <circle cx="50" cy="50" r="5" fill="#EF4444"/>
+    </g>
+
+    <!-- Hours breakdown -->
+    <g transform="translate(20, 170)">
+      <text x="0" y="0" fill="white" font-family="Arial, sans-serif" font-size="12">Daily: 8 hours</text>
+      <text x="0" y="22" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="11">Mon-Fri, 9am-5pm</text>
+      <text x="0" y="50" fill="white" font-family="Arial, sans-serif" font-size="12">Annual: ~1,600 hours</text>
+      <text x="0" y="72" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="11">(minus holidays, sick days)</text>
+    </g>
+  </g>
+
+  <!-- AI hours visualization -->
+  <g transform="translate(440, 80)">
+    <rect x="0" y="0" width="280" height="260" rx="16" fill="#111113" stroke="#10B981" stroke-width="2"/>
+
+    <text x="140" y="35" fill="#10B981" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">Sophie AI</text>
+
+    <!-- Clock showing 24/7 - full circle -->
+    <g transform="translate(90, 50)">
+      <circle cx="50" cy="50" r="45" fill="#1a1a1a" stroke="#10B981" stroke-width="2"/>
+      <!-- Full coverage circle -->
+      <circle cx="50" cy="50" r="40" stroke="#10B981" stroke-width="8" fill="none"/>
+      <circle cx="50" cy="50" r="5" fill="#10B981"/>
+      <!-- 24/7 text -->
+      <text x="50" y="55" fill="#10B981" font-family="Arial, sans-serif" font-size="12" font-weight="bold" text-anchor="middle">24/7</text>
+    </g>
+
+    <!-- Hours breakdown -->
+    <g transform="translate(20, 170)">
+      <text x="0" y="0" fill="white" font-family="Arial, sans-serif" font-size="12">Daily: 24 hours</text>
+      <text x="0" y="22" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="11">Every day, including holidays</text>
+      <text x="0" y="50" fill="white" font-family="Arial, sans-serif" font-size="12">Annual: 8,760 hours</text>
+      <text x="0" y="72" fill="#10B981" font-family="Arial, sans-serif" font-size="11">(100% uptime guaranteed)</text>
+    </g>
+  </g>
+
+  <!-- Comparison bars -->
+  <g transform="translate(80, 360)">
+    <text x="0" y="15" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="11">Human</text>
+    <rect x="60" y="0" width="100" height="25" rx="4" fill="#EF4444" opacity="0.6"/>
+    <text x="170" y="17" fill="#EF4444" font-family="Arial, sans-serif" font-size="12" font-weight="bold">1,600 hrs</text>
+  </g>
+
+  <g transform="translate(80, 395)">
+    <text x="0" y="15" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="11">Sophie</text>
+    <rect x="60" y="0" width="540" height="25" rx="4" fill="#10B981"/>
+    <text x="610" y="17" fill="#10B981" font-family="Arial, sans-serif" font-size="12" font-weight="bold">8,760 hrs</text>
+  </g>
+
+  <!-- Multiplier badge -->
+  <g transform="translate(350, 350)">
+    <rect x="0" y="0" width="100" height="40" rx="20" fill="#10B981"/>
+    <text x="50" y="26" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle">5.5x more</text>
+  </g>
+</svg>

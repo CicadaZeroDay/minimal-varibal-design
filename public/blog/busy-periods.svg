@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" stop-color="#111113"/>
+      <stop offset="100%" stop-color="#0A0A0B"/>
+    </radialGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066FF"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <filter id="blur1" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="60"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Decorative Orbs -->
+  <circle cx="100" cy="150" r="200" fill="#0066FF" opacity="0.08" filter="url(#blur1)"/>
+  <circle cx="1100" cy="480" r="180" fill="#8B5CF6" opacity="0.06" filter="url(#blur1)"/>
+
+  <!-- Category Badge -->
+  <rect x="80" y="80" width="120" height="36" rx="18" fill="url(#accentGrad)"/>
+  <text x="140" y="104" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="white">RESEARCH</text>
+
+  <!-- Icon: Graph with Peak -->
+  <g transform="translate(600, 195)">
+    <circle cx="0" cy="0" r="80" fill="url(#accentGrad)" opacity="0.15"/>
+    <!-- Axis -->
+    <line x1="-45" y1="40" x2="45" y2="40" stroke="url(#accentGrad)" stroke-width="3"/>
+    <line x1="-45" y1="40" x2="-45" y2="-35" stroke="url(#accentGrad)" stroke-width="3"/>
+    <!-- Graph line with peak -->
+    <path d="M-40 30 L-20 20 L0 -30 L20 10 L40 25" fill="none" stroke="url(#accentGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Peak indicator -->
+    <circle cx="0" cy="-30" r="8" fill="url(#accentGrad)" opacity="0.5"/>
+    <line x1="0" y1="-22" x2="0" y2="-45" stroke="url(#accentGrad)" stroke-width="2" stroke-dasharray="4,2"/>
+    <text x="0" y="-50" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="url(#accentGrad)">PEAK</text>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="355" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" font-weight="800" fill="white">Peak Hours: When <tspan fill="#EF4444">67%</tspan> of</text>
+  <text x="600" y="410" text-anchor="middle" font-family="Inter, sans-serif" font-size="38" font-weight="800" fill="white">Your Calls Go Unanswered</text>
+
+  <!-- Stats -->
+  <g transform="translate(600, 510)">
+    <text x="-200" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="#0066FF">11am-2pm</text>
+    <text x="-200" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#A1A1AA">Peak Call Hours</text>
+
+    <text x="0" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="#EF4444">67%</text>
+    <text x="0" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#A1A1AA">Calls Missed</text>
+
+    <text x="200" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="32" font-weight="800" fill="#10B981">0%</text>
+    <text x="200" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#A1A1AA">With AI Reception</text>
+  </g>
+
+  <!-- Brand -->
+  <text x="1120" y="600" text-anchor="end" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="#A1A1AA">nomissedcalls.uk</text>
+</svg>

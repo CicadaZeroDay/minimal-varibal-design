@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0A0B"/>
+      <stop offset="100%" stop-color="#111113"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066FF"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+
+  <!-- Sophie AI Circle -->
+  <g transform="translate(400, 180)">
+    <circle cx="0" cy="0" r="80" fill="url(#accentGrad)" opacity="0.15"/>
+    <circle cx="0" cy="0" r="60" fill="url(#accentGrad)" opacity="0.25"/>
+
+    <!-- AI wave icon -->
+    <g stroke="url(#accentGrad)" stroke-width="3" fill="none" stroke-linecap="round">
+      <path d="M-25 0 Q-15 -20 0 0 Q15 20 25 0"/>
+      <path d="M-35 0 Q-20 -30 0 0 Q20 30 35 0" opacity="0.6"/>
+      <path d="M-45 0 Q-25 -40 0 0 Q25 40 45 0" opacity="0.3"/>
+    </g>
+
+    <text x="0" y="100" text-anchor="middle" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="white">Sophie AI</text>
+    <text x="0" y="120" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#A1A1AA">24/7 Gym Receptionist</text>
+  </g>
+
+  <!-- Incoming calls being answered -->
+  <g transform="translate(150, 150)">
+    <rect x="0" y="0" width="60" height="100" rx="8" fill="#1a1a1a" stroke="url(#greenGrad)" stroke-width="2"/>
+    <text x="30" y="55" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#10B981">Incoming</text>
+    <path d="M70 50 L120 50" stroke="url(#greenGrad)" stroke-width="2" stroke-dasharray="5,5"/>
+    <circle cx="130" cy="50" r="8" fill="url(#greenGrad)"/>
+    <text x="130" y="54" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="white">✓</text>
+  </g>
+
+  <!-- Booking confirmation -->
+  <g transform="translate(550, 150)">
+    <rect x="0" y="0" width="60" height="100" rx="8" fill="#1a1a1a" stroke="url(#greenGrad)" stroke-width="2"/>
+    <text x="30" y="45" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#10B981">Trial</text>
+    <text x="30" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#10B981">Booked!</text>
+    <path d="M-60 50 L-10 50" stroke="url(#greenGrad)" stroke-width="2" stroke-dasharray="5,5"/>
+  </g>
+
+  <!-- Features list -->
+  <g transform="translate(400, 340)">
+    <text x="-200" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="url(#accentGrad)" font-weight="600">✓ Class schedules</text>
+    <text x="0" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="url(#accentGrad)" font-weight="600">✓ Membership prices</text>
+    <text x="200" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="url(#accentGrad)" font-weight="600">✓ Trial bookings</text>
+
+    <text x="-200" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="url(#accentGrad)" font-weight="600">✓ PT availability</text>
+    <text x="0" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="url(#accentGrad)" font-weight="600">✓ Opening hours</text>
+    <text x="200" y="30" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="url(#accentGrad)" font-weight="600">✓ Instant SMS confirm</text>
+  </g>
+
+  <text x="400" y="40" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="white">Every call answered. Every lead captured.</text>
+</svg>

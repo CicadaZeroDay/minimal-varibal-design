@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0A0B"/>
+      <stop offset="100%" stop-color="#111113"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066FF"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+
+  <!-- Growth chart -->
+  <g transform="translate(100, 80)">
+    <!-- Axes -->
+    <line x1="50" y1="200" x2="350" y2="200" stroke="#333" stroke-width="2"/>
+    <line x1="50" y1="200" x2="50" y2="50" stroke="#333" stroke-width="2"/>
+
+    <!-- Before bar -->
+    <rect x="100" y="140" width="60" height="60" fill="#333" rx="4"/>
+    <text x="130" y="175" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="white">42</text>
+    <text x="130" y="220" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#A1A1AA">Before</text>
+
+    <!-- After bar -->
+    <rect x="220" y="70" width="60" height="130" fill="url(#greenGrad)" rx="4"/>
+    <text x="250" y="120" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="white">89</text>
+    <text x="250" y="220" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#A1A1AA">After</text>
+
+    <!-- Arrow -->
+    <path d="M170 130 L210 90" stroke="url(#greenGrad)" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+    <text x="200" y="75" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="800" fill="#10B981">+112%</text>
+
+    <text x="200" y="260" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="white">New Members/Month</text>
+  </g>
+
+  <!-- Key metrics -->
+  <g transform="translate(550, 100)">
+    <rect x="0" y="0" width="200" height="250" rx="12" fill="#111113" stroke="#222" stroke-width="1"/>
+
+    <text x="100" y="35" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#A1A1AA">Key Results</text>
+
+    <line x1="20" y1="50" x2="180" y2="50" stroke="#222" stroke-width="1"/>
+
+    <text x="100" y="85" text-anchor="middle" font-family="Inter, sans-serif" font-size="28" font-weight="800" fill="url(#accentGrad)">£9,400</text>
+    <text x="100" y="105" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#A1A1AA">Extra monthly revenue</text>
+
+    <text x="100" y="145" text-anchor="middle" font-family="Inter, sans-serif" font-size="28" font-weight="800" fill="#10B981">24x</text>
+    <text x="100" y="165" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#A1A1AA">Return on investment</text>
+
+    <text x="100" y="205" text-anchor="middle" font-family="Inter, sans-serif" font-size="28" font-weight="800" fill="#8B5CF6">100%</text>
+    <text x="100" y="225" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#A1A1AA">Calls answered</text>
+  </g>
+
+  <!-- Bottom stats -->
+  <g transform="translate(400, 400)">
+    <text x="-250" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#0066FF">34</text>
+    <text x="-250" y="22" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#A1A1AA">After-hours bookings/mo</text>
+
+    <text x="0" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#10B981">4.9★</text>
+    <text x="0" y="22" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#A1A1AA">Google rating (was 4.4)</text>
+
+    <text x="250" y="0" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#8B5CF6">0</text>
+    <text x="250" y="22" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" fill="#A1A1AA">Missed calls</text>
+  </g>
+
+  <text x="400" y="40" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="white">Iron Fitness: 90-Day Results</text>
+</svg>

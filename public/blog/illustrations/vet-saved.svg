@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A0A0B"/>
+      <stop offset="100%" style="stop-color:#111113"/>
+    </linearGradient>
+    <linearGradient id="greenGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669"/>
+      <stop offset="100%" style="stop-color:#10B981"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <!-- Decorative -->
+  <circle cx="700" cy="80" r="100" fill="#10B981" opacity="0.1"/>
+  <circle cx="100" cy="380" r="80" fill="#0066FF" opacity="0.1"/>
+
+  <!-- Title -->
+  <text x="400" y="45" fill="white" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle">Yorkshire Vets: 12-Month Impact</text>
+
+  <!-- Pets saved metric -->
+  <g transform="translate(80, 80)">
+    <rect x="0" y="0" width="300" height="180" rx="16" fill="#111113" stroke="#10B981" stroke-width="2"/>
+
+    <text x="150" y="35" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">Additional Pets Treated Early</text>
+
+    <!-- Heart with paw -->
+    <g transform="translate(100, 50)">
+      <path d="M50 25 C50 10, 70 0, 85 15 C100 0, 120 10, 120 25 C120 50, 85 70, 85 70 C85 70, 50 50, 50 25" fill="#10B981" opacity="0.3"/>
+      <text x="68" y="50" fill="#10B981" font-family="Arial, sans-serif" font-size="24">🐾</text>
+    </g>
+
+    <text x="150" y="145" fill="#10B981" font-family="Arial, sans-serif" font-size="42" font-weight="bold" text-anchor="middle">324</text>
+    <text x="150" y="170" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">pets received timely care</text>
+  </g>
+
+  <!-- Revenue growth -->
+  <g transform="translate(420, 80)">
+    <rect x="0" y="0" width="300" height="180" rx="16" fill="#111113" stroke="#0066FF" stroke-width="2"/>
+
+    <text x="150" y="35" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="13" text-anchor="middle">Additional Annual Revenue</text>
+
+    <text x="150" y="100" fill="#0066FF" font-family="Arial, sans-serif" font-size="48" font-weight="bold" text-anchor="middle">£89K</text>
+
+    <text x="150" y="130" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">from after-hours emergencies</text>
+
+    <!-- Breakdown -->
+    <g transform="translate(40, 150)">
+      <text x="110" y="0" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">324 cases × £275 avg = £89,100</text>
+    </g>
+  </g>
+
+  <!-- Bottom metrics -->
+  <g transform="translate(80, 290)">
+    <rect x="0" y="0" width="200" height="130" rx="12" fill="#111113" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="100" y="30" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Emergency Calls Answered</text>
+    <text x="100" y="70" fill="white" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle">100%</text>
+    <text x="100" y="95" fill="#10B981" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">24/7/365</text>
+    <text x="100" y="115" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">(vs 35% before)</text>
+  </g>
+
+  <g transform="translate(300, 290)">
+    <rect x="0" y="0" width="200" height="130" rx="12" fill="#111113" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="100" y="30" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">Critical Cases Triaged</text>
+    <text x="100" y="70" fill="white" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle">28</text>
+    <text x="100" y="95" fill="#EF4444" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">life-saving alerts</text>
+    <text x="100" y="115" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">(immediate vet contact)</text>
+  </g>
+
+  <g transform="translate(520, 290)">
+    <rect x="0" y="0" width="200" height="130" rx="12" fill="#111113" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <text x="100" y="30" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="11" text-anchor="middle">ROI</text>
+    <text x="100" y="70" fill="white" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle">18x</text>
+    <text x="100" y="95" fill="#F59E0B" font-family="Arial, sans-serif" font-size="12" text-anchor="middle">return</text>
+    <text x="100" y="115" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="10" text-anchor="middle">(£4,800 → £89,100)</text>
+  </g>
+
+  <!-- Quote -->
+  <g transform="translate(80, 430)">
+    <text x="320" y="0" fill="#A1A1AA" font-family="Arial, sans-serif" font-size="10" font-style="italic" text-anchor="middle">"Sophie has literally saved lives. One owner called at 3am about their dog who'd eaten chocolate. Sophie triaged it as critical and woke me up. That dog is alive today because of that call."</text>
+  </g>
+</svg>
