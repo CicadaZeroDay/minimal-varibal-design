@@ -61,6 +61,24 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://nomissedcalls.uk/blog/fitness-club-case-study-missed-membership-calls</loc>
+    <lastmod>2025-12-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nomissedcalls.uk/blog/how-leeds-dental-practice-increased-bookings-42-percent-ai-receptionist</loc>
+    <lastmod>2025-12-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nomissedcalls.uk/blog/how-oxford-accountants-increased-clients-40-percent-ai-receptionist-2025-12-31</loc>
+    <lastmod>2025-12-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <!-- Educational Articles -->
   <url>
     <loc>https://nomissedcalls.uk/blog/missed-calls-cost-uk-business</loc>
@@ -71,6 +89,12 @@
   <url>
     <loc>https://nomissedcalls.uk/blog/ai-receptionist-vs-human-receptionist</loc>
     <lastmod>2025-01-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nomissedcalls.uk/blog/ai-receptionist-vs-human-receptionist-2025-comparison</loc>
+    <lastmod>2025-12-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

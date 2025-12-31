@@ -46,10 +46,43 @@ const Article: React.FC = () => {
 
   useEffect(() => {
     if (article) {
+      // Update title
       document.title = `${article.title} | No Missed Calls Blog`;
+
+      // Update meta description
       const metaDescription = document.querySelector('meta[name="description"]');
       if (metaDescription) {
         metaDescription.setAttribute('content', article.description);
+      }
+
+      // Update Open Graph tags
+      const ogTitle = document.querySelector('meta[property="og:title"]');
+      const ogDescription = document.querySelector('meta[property="og:description"]');
+      const ogImage = document.querySelector('meta[property="og:image"]');
+      const ogUrl = document.querySelector('meta[property="og:url"]');
+
+      if (ogTitle) ogTitle.setAttribute('content', `${article.title} | No Missed Calls`);
+      if (ogDescription) ogDescription.setAttribute('content', article.description);
+      if (ogImage && article.featuredImage) {
+        ogImage.setAttribute('content', `https://nomissedcalls.uk${article.featuredImage}`);
+      }
+      if (ogUrl) ogUrl.setAttribute('content', `https://nomissedcalls.uk/blog/${article.slug}`);
+
+      // Update Twitter tags
+      const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+      const twitterDescription = document.querySelector('meta[name="twitter:description"]');
+      const twitterImage = document.querySelector('meta[name="twitter:image"]');
+
+      if (twitterTitle) twitterTitle.setAttribute('content', `${article.title} | No Missed Calls`);
+      if (twitterDescription) twitterDescription.setAttribute('content', article.description);
+      if (twitterImage && article.featuredImage) {
+        twitterImage.setAttribute('content', `https://nomissedcalls.uk${article.featuredImage}`);
+      }
+
+      // Update canonical URL
+      let canonical = document.querySelector('link[rel="canonical"]');
+      if (canonical) {
+        canonical.setAttribute('href', `https://nomissedcalls.uk/blog/${article.slug}`);
       }
     }
   }, [article]);
@@ -70,8 +103,40 @@ const Article: React.FC = () => {
     return <Navigate to="/blog" replace />;
   }
 
+  // JSON-LD structured data for article
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": article.title,
+    "description": article.description,
+    "image": article.featuredImage ? `https://nomissedcalls.uk${article.featuredImage}` : "https://nomissedcalls.uk/og-image.webp",
+    "author": {
+      "@type": "Organization",
+      "name": article.author
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "No Missed Calls",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://nomissedcalls.uk/logo.png"
+      }
+    },
+    "datePublished": article.publishedAt,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://nomissedcalls.uk/blog/${article.slug}`
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#0A0A0B] flex flex-col overflow-x-hidden">
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* Background Gradients */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-[-10%] right-[-10%] w-[50%] h-[50%] bg-[#0066FF] opacity-5 blur-[150px] rounded-full"></div>
