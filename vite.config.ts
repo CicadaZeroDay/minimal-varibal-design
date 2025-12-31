@@ -26,10 +26,16 @@ export default defineConfig(({ mode }) => {
             manualChunks: {
               'react-vendor': ['react', 'react-dom'],
               'router': ['react-router-dom'],
+              'icons': ['lucide-react'],
+              'supabase': ['@supabase/supabase-js'],
+              'analytics': ['@vercel/analytics', '@vercel/speed-insights'],
             }
           }
         },
-        minify: 'esbuild'
+        minify: 'esbuild',
+        target: 'esnext',
+        cssCodeSplit: true,
+        sourcemap: false,
       }
     };
 });
